@@ -19,19 +19,21 @@
  * Button variant types
  * Gunakan ini untuk Button component
  */
-export type ButtonVariant = 'primary' | 'secondary' | 'outline';
+export type ButtonVariant = "primary" | "secondary" | "outline";
+
+export type ButtonSize = "sm" | "md" | "lg";
 
 /**
  * Example: Button Props
  * Uncomment dan sesuaikan dengan kebutuhan
  */
-// export interface ButtonProps {
-//   variant?: ButtonVariant;
-//   children: React.ReactNode;
-//   onClick?: () => void;
-//   className?: string;
-//   disabled?: boolean;
-// }
+export interface ButtonProps {
+  variant?: ButtonVariant;
+  children: React.ReactNode;
+  onClick?: () => void;
+  className?: string;
+  disabled?: boolean;
+}
 
 // ==========================================
 // Section Data Types
@@ -50,13 +52,13 @@ export type ButtonVariant = 'primary' | 'secondary' | 'outline';
 /**
  * Example: Service/Product Item
  */
-// export interface ServiceItem {
-//   id: number;
-//   title: string;
-//   description: string;
-//   icon?: string;
-//   image?: string;
-// }
+export interface ServiceItem {
+  id: number;
+  title: string;
+  description: string;
+  icon?: string;
+  image?: string;
+}
 
 /**
  * Example: Team Member
@@ -94,11 +96,11 @@ export type ButtonVariant = 'primary' | 'secondary' | 'outline';
 /**
  * Navigation menu item
  */
-// export interface NavItem {
-//   label: string;
-//   href: string;
-//   external?: boolean;
-// }
+export interface NavItem {
+  label: string;
+  href: string;
+  external?: boolean;
+}
 
 // ==========================================
 // Form Types (if needed)
