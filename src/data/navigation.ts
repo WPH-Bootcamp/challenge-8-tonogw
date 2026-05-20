@@ -1,8 +1,29 @@
-import { NavItem } from "../types/index";
+// import { NavItem } from "../types/index";
 
-export const navItems: NavItem[] = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
+export const navLink: NavItem[] = [
+  {
+    label: "About",
+    href: "#about",
+    external: false,
+  },
+  {
+    label: "Services",
+    href: "#services",
+    external: false,
+  },
+  {
+    label: "Projects",
+    href: "#projects",
+    external: false,
+  },
+  {
+    label: "Testimonials",
+    href: "#testimonials",
+    external: false,
+  },
+  {
+    label: "FAQ",
+    href: "#faq",
+    external: false,
+  },
 ];

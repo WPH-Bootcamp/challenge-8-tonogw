@@ -39,6 +39,12 @@ export interface ButtonProps {
 // Section Data Types
 // ==========================================
 
+export interface CompanyLogo {
+  id: number;
+  name: string;
+  image: string;
+}
+
 /**
  * TODO: Define interfaces untuk data yang digunakan di sections
  *
@@ -52,13 +58,13 @@ export interface ButtonProps {
 /**
  * Example: Service/Product Item
  */
-export interface ServiceItem {
-  id: number;
-  title: string;
-  description: string;
-  icon?: string;
-  image?: string;
-}
+// export interface ServiceItem {
+//   id: number;
+//   title: string;
+//   description: string;
+//   icon?: string;
+//   image?: string;
+// }
 
 /**
  * Example: Team Member
@@ -79,15 +85,15 @@ export interface ServiceItem {
 /**
  * Example: Testimonial
  */
-// export interface Testimonial {
-//   id: number;
-//   name: string;
-//   position: string;
-//   company: string;
-//   message: string;
-//   avatar?: string;
-//   rating?: number;
-// }
+export interface Testimonial {
+  id: number;
+  name: string;
+  role: string;
+  company: string;
+  message: string;
+  avatar?: string;
+  rating?: number;
+}
 
 // ==========================================
 // Navigation Types
@@ -96,11 +102,11 @@ export interface ServiceItem {
 /**
  * Navigation menu item
  */
-export interface NavItem {
-  label: string;
-  href: string;
-  external?: boolean;
-}
+// export interface NavItem {
+//   label: string;
+//   href: string;
+//   external?: boolean;
+// }
 
 // ==========================================
 // Form Types (if needed)

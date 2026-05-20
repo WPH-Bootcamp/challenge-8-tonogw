@@ -1,23 +1,31 @@
-export const testimonial = [
+import type { Testimonial } from "../types";
+
+export const testimonials: Testimonial[] = [
   {
-    personName: "Sarah Tan",
+    id: 1,
+    name: "Sarah Tan",
     role: "Product Manager",
-    partner: "Finovate",
-    testimoni:
+    company: "Finovate",
+    message:
       '“The team delivered exactly what we needed — on time and with outstanding quality. Their attention to detail and communication were top-notch."',
+    rating: 5,
   },
   {
-    personName: "Emily Chen",
+    id: 2,
+    name: "Emily Chen",
     role: "Marketing Head",
-    partner: "Tech Solution",
-    testimoni:
+    company: "Tech Solution",
+    message:
       "“The collaboration was seamless, and the results surpassed our expectations. Their expertise transformed our ideas into a successful product.”",
+    rating: 5,
   },
   {
-    personName: "John Lee",
+    id: 3,
+    name: "John Lee",
     role: "Creative Director",
-    partner: "Innovate Corp",
-    testimoni:
+    company: "Innovate Corp",
+    message:
       '"Working with this team was a game-changer for our project. They understood our vision and turned it into reality efficiently and effectively."',
+    rating: 5,
   },
 ];

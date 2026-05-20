@@ -8,40 +8,51 @@ import PostmanLogo from "../assets/logo/logo-postman.png";
 import UpworkLogo from "../assets/logo/logo-upwork.png";
 import ZoomLogo from "../assets/logo/logo-zoom.png";
 
-export const companyLogos = [
+import type { CompanyLogo } from "../types";
+
+export const companyLogo: CompanyLogo[] = [
   {
+    id: 1,
     name: "Adobe",
     image: AdobeLogo,
   },
   {
+    id: 2,
     name: "Airbnb",
     image: AirbnbLogo,
   },
   {
+    id: 3,
     name: "Databricks",
     image: DatabriksLogo,
   },
   {
+    id: 4,
     name: "Dropbox",
     image: DropboxLogo,
   },
   {
+    id: 5,
     name: "Netflix",
     image: NetflixLogo,
   },
   {
+    id: 6,
     name: "Paypal",
     image: PaypalLogo,
   },
   {
+    id: 7,
     name: "Postman",
     image: PostmanLogo,
   },
   {
+    id: 8,
     name: "Upwork",
     image: UpworkLogo,
   },
   {
+    id: 9,
     name: "Zoom",
     image: ZoomLogo,
   },

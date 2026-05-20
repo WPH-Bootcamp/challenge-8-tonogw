@@ -1,4 +1,4 @@
-import { testimonial } from "../../data/testimonials";
+import { testimonials } from "../../data/testimonials";
 
 export default function TestimonialsSection() {
   return (
@@ -11,21 +11,21 @@ export default function TestimonialsSection() {
           </h2>
         </div>
         <div className="overflow-x-auto scroll-smooth  pb-4">
-          {testimonial.map((item) => (
+          {testimonials.map((message) => (
             <div
-              key={item.personName}
+              key={message.id}
               className="w-[85vw] sm:w-[350px] snap-center rounded-3xl bg-gray-100 dark:bg-gray-800 p-8 shadow-lg"
             >
               {/* TESTIMONI */}
               <p className="mb-8 text-left landing-relaxed text-gray-700 dark:text-gray-300">
-                {item.testimoni}
+                {message.message}
               </p>
               {/* PERSON NAME */}
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                {item.personName}
+                {message.name}
               </h3>
               <p className="text-sm text-gray-500">
-                {item.role} from {item.partner}
+                {message.role} from {message.company}
               </p>
             </div>
           ))}
