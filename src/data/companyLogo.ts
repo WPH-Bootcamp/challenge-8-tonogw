@@ -1,12 +1,12 @@
-import AdobeLogo from "../assets/Logo_Adobe.png";
-import AirbnbLogo from "../assets/Logo_airBnB.png";
-import DatabriksLogo from "../assets/Logo_dataBricks.png";
-import DropboxLogo from "../assets/Logo_Dropbox.png";
-import NetflixLogo from "../assets/Logo_Netflix.png";
-import PaypalLogo from "../assets/Logo_PayPal.png";
-import PostmanLogo from "../assets/Logo_Postman.png";
-import UpworkLogo from "../assets/Logo_upwork.png";
-import ZoomLogo from "../assets/Logo_zoom.png";
+import AdobeLogo from "../assets/logo/logo-adobe.png";
+import AirbnbLogo from "../assets/logo/logo-airbnb.png";
+import DatabriksLogo from "../assets/logo/logo-databricks.png";
+import DropboxLogo from "../assets/logo/logo-dropbox.png";
+import NetflixLogo from "../assets/logo/logo-netflix.png";
+import PaypalLogo from "../assets/logo/logo-paypal.png";
+import PostmanLogo from "../assets/logo/logo-postman.png";
+import UpworkLogo from "../assets/logo/logo-upwork.png";
+import ZoomLogo from "../assets/logo/logo-zoom.png";
 
 export const companyLogos = [
   {

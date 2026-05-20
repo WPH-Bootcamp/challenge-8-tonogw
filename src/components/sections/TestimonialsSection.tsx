@@ -3,14 +3,14 @@ import { testimonial } from "../../data/testimonials";
 export default function TestimonialsSection() {
   return (
     // SECTION TESTIMONIALS HEIGHT max-h-723
-    <section className="min-h-[723px] bg-white dark:bg-gray-900 flex py-24">
+    <section className="w-full min-h-[723px] bg-white dark:bg-gray-900 flex py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mb-16 text-center">
           <h2 className="text-3xl  font-semibold text-gray-900 dark:text-white">
             What Partners Say About Working With Us
           </h2>
         </div>
-        <div className="flex gap-8 overflow-x-auto scroll-smooth  pb-4">
+        <div className="overflow-x-auto scroll-smooth  pb-4">
           {testimonial.map((item) => (
             <div
               key={item.personName}
