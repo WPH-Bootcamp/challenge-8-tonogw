@@ -1,5 +1,7 @@
 import { testimonials } from "../../data/testimonials";
 
+const star  = {"*".repeat(message.rating)}
+
 export default function TestimonialsSection() {
   return (
     // SECTION TESTIMONIALS HEIGHT max-h-723
@@ -16,6 +18,8 @@ export default function TestimonialsSection() {
               key={message.id}
               className="w-[85vw] sm:w-[350px] snap-center rounded-3xl bg-gray-100 dark:bg-gray-800 p-8 shadow-lg"
             >
+              {/* RATING */}
+              <p className="text-white">{message.rating}</p>
               {/* TESTIMONI */}
               <p className="mb-8 text-left landing-relaxed text-gray-700 dark:text-gray-300">
                 {message.message}

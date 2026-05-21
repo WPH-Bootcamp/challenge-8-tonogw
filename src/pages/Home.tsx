@@ -1,4 +1,4 @@
-// import Navbar from "../components/layout/Navbar";
+import Navbar from "../components/layout/Navbar";
 // import Footer from "../components/layout/Footer";
 // import HeroSection from "../components/sections/HeroSection";
 // import AboutSection from "../components/sections/AboutSection";
@@ -12,11 +12,11 @@ import CompanyLogoSection from "../components/sections/CompanyLogoSection";
 const Home = () => {
   return (
     <div className="min-h-screen">
-      {/* <NavbarSection /> */}
-      <CompanyLogoSection />
+      <Navbar />
 
       <main>
         {/* <HeroSection /> */}
+        <CompanyLogoSection />
         {/* <AboutSection /> */}
         {/* <ServicesSection /> */}
         <TestimonialsSection />

@@ -18,7 +18,7 @@ export default function CompanyLogoSection() {
                 width={120}
                 height={40}
                 // HOVER TO RETURN BACK COLOR INTO ITS ORIGINAL
-                className="object-contain saturate-0   hover:saturate-100 hover:brightness-120 hover:bg-blend-lighten"
+                className="object-contain saturate-0   hover:brightness-120 hover:saturate-100 hover:bg-blend-lighten"
               />
             ))}
           </div>

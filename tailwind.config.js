@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       // ==========================================
@@ -22,6 +19,13 @@ export default {
         // secondary: '#...',
         // accent: '#...',
         // Add your custom colors here based on Figma design
+        brand: {},
+        surface: {
+          light: "#FFFFFF",
+          dark: "#000000",
+        },
+        text: {},
+        border: {},
       },
 
       // ==========================================
@@ -30,7 +34,7 @@ export default {
       fontFamily: {
         // TODO: Add custom fonts dari Figma
         // Example:
-        // sans: ['Inter', 'sans-serif'],
+        sans: ["Inter", "sans-serif"],
         // heading: ['Poppins', 'sans-serif'],
       },
 
@@ -54,11 +58,11 @@ export default {
       // ==========================================
       screens: {
         // Default Tailwind breakpoints:
-        // sm: '640px',
-        // md: '768px',
-        // lg: '1024px',
-        // xl: '1280px',
-        // '2xl': '1536px',
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
 
         // Add custom breakpoints jika perlu:
         // 'tablet': '768px',
@@ -88,11 +92,11 @@ export default {
       container: {
         center: true,
         padding: {
-          DEFAULT: '1rem',
-          sm: '2rem',
-          lg: '4rem',
-          xl: '5rem',
-          '2xl': '6rem',
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
         },
       },
     },
@@ -103,7 +107,7 @@ export default {
     // require('@tailwindcss/forms'),
     // require('@tailwindcss/typography'),
   ],
-}
+};
 
 /**
  * INSTRUCTIONS:

@@ -1,4 +1,4 @@
-// import { NavItem } from "../types/index";
+import type { NavItem } from "../types/index";
 
 export const navLink: NavItem[] = [
   {

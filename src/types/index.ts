@@ -58,13 +58,13 @@ export interface CompanyLogo {
 /**
  * Example: Service/Product Item
  */
-// export interface ServiceItem {
-//   id: number;
-//   title: string;
-//   description: string;
-//   icon?: string;
-//   image?: string;
-// }
+export interface ServiceItem {
+  id: number;
+  title: string;
+  description: string;
+  icon?: string;
+  image?: string;
+}
 
 /**
  * Example: Team Member
@@ -93,6 +93,7 @@ export interface Testimonial {
   message: string;
   avatar?: string;
   rating?: number;
+  image: string;
 }
 
 // ==========================================
@@ -102,11 +103,11 @@ export interface Testimonial {
 /**
  * Navigation menu item
  */
-// export interface NavItem {
-//   label: string;
-//   href: string;
-//   external?: boolean;
-// }
+export interface NavItem {
+  label: string;
+  href: string;
+  external?: boolean;
+}
 
 // ==========================================
 // Form Types (if needed)
