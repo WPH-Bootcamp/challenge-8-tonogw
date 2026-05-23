@@ -4,7 +4,7 @@ export default function TestimonialsSection() {
   return (
     // SECTION TESTIMONIALS HEIGHT max-h-723
     <section
-      id="testimonial"
+      id="testimonials"
       className="
       w-full max-h-180
        bg-white

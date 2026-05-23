@@ -58,19 +58,21 @@ export const brandLogos: BrandLogo[] = [
   },
 ];
 
-export const partnersName = [
-  {
-    id: 1,
-    name: "Finovate",
-  },
+// import  = [
+//   {
+//     id: 1,
+//     name: "Sarah Tan",
+//     role: "Product Manager",
+//     partner: "Finovate",
+//   },
 
-  {
-    id: 2,
-    name: "Innovate Corp",
-  },
+//   {
+//     id: 2,
+//     name: "Innovate Corp",
+//   },
 
-  {
-    id: 3,
-    name: "Finovate",
-  },
-];
+//   {
+//     id: 3,
+//     name: "Finovate",
+//   },
+// ];

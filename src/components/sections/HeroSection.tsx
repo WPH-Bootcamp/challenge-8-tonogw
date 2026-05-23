@@ -4,7 +4,9 @@ import { companyInfo } from "../../data/company";
 
 export default function HeroSection() {
   return (
+    // HERO CONTAINER
     <section
+      id="hero"
       className="
     w-full
     bg-white
