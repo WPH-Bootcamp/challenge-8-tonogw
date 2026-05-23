@@ -8,9 +8,9 @@ import PostmanLogo from "../assets/logo/logo-postman.png";
 import UpworkLogo from "../assets/logo/logo-upwork.png";
 import ZoomLogo from "../assets/logo/logo-zoom.png";
 
-import type { CompanyLogo } from "../types";
+import type { BrandLogo } from "../types";
 
-export const companyLogo: CompanyLogo[] = [
+export const brandLogos: BrandLogo[] = [
   {
     id: 1,
     name: "Adobe",
@@ -55,5 +55,22 @@ export const companyLogo: CompanyLogo[] = [
     id: 9,
     name: "Zoom",
     image: ZoomLogo,
+  },
+];
+
+export const partnersName = [
+  {
+    id: 1,
+    name: "Finovate",
+  },
+
+  {
+    id: 2,
+    name: "Innovate Corp",
+  },
+
+  {
+    id: 3,
+    name: "Finovate",
   },
 ];

@@ -1,7 +1,8 @@
 import type { Testimonial } from "../types";
-import Sarah from "../assets/profile/Sarah_Tan.png";
-import Emily from "../assets/profile/Emily_Chen.png";
-import John from "../assets/profile/John_Lee.png";
+import Sarah from "../assets/testimonial/Sarah_Tan.png";
+import Emily from "../assets/testimonial/Emily_Chen.png";
+import John from "../assets/testimonial/John_Lee.png";
+import quote from "../assets/testimonial/quote.png";
 
 export const testimonials: Testimonial[] = [
   {
@@ -12,8 +13,11 @@ export const testimonials: Testimonial[] = [
     message:
       '“The team delivered exactly what we needed — on time and with outstanding quality. Their attention to detail and communication were top-notch."',
     rating: 5,
-    image: Sarah,
+    avatar: Sarah,
+    icon: quote,
+    image: "",
   },
+
   {
     id: 2,
     name: "Emily Chen",
@@ -22,8 +26,11 @@ export const testimonials: Testimonial[] = [
     message:
       "“The collaboration was seamless, and the results surpassed our expectations. Their expertise transformed our ideas into a successful product.”",
     rating: 5,
-    image: Emily,
+    avatar: Emily,
+    icon: quote,
+    image: "",
   },
+
   {
     id: 3,
     name: "John Lee",
@@ -32,6 +39,8 @@ export const testimonials: Testimonial[] = [
     message:
       '"Working with this team was a game-changer for our project. They understood our vision and turned it into reality efficiently and effectively."',
     rating: 5,
-    image: John,
+    avatar: John,
+    image: "",
+    icon: quote,
   },
 ];

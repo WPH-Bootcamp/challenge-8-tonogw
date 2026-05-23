@@ -1,12 +1,12 @@
 import Navbar from "../components/layout/Navbar";
 // import Footer from "../components/layout/Footer";
-// import HeroSection from "../components/sections/HeroSection";
+import HeroSection from "../components/sections/HeroSection";
 // import AboutSection from "../components/sections/AboutSection";
 // import ServicesSection from "../components/sections/ServicesSection";
 import TestimonialsSection from "../components/sections/TestimonialsSection";
 // import ContactSection from "../components/sections/ContactSection";
-import CompanyLogoSection from "../components/sections/CompanyLogoSection";
-// import NavbarSection from "../components/layout/Navbar";
+import BrandLogosSection from "../components/sections/BrandLogosSection";
+import End2EndSection from "../components/sections/End2EndSection";
 // export default function Home(){}
 
 const Home = () => {
@@ -15,8 +15,9 @@ const Home = () => {
       <Navbar />
 
       <main>
-        {/* <HeroSection /> */}
-        <CompanyLogoSection />
+        <HeroSection />
+        <BrandLogosSection />
+        <End2EndSection />
         {/* <AboutSection /> */}
         {/* <ServicesSection /> */}
         <TestimonialsSection />

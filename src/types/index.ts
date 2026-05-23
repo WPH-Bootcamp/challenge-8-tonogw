@@ -39,7 +39,7 @@ export interface ButtonProps {
 // Section Data Types
 // ==========================================
 
-export interface CompanyLogo {
+export interface BrandLogo {
   id: number;
   name: string;
   image: string;
@@ -66,6 +66,19 @@ export interface ServiceItem {
   image?: string;
 }
 
+export interface End2EndItem {
+  id: number;
+  title: string;
+  description: string;
+  icon?: string;
+}
+
+export interface SolutionItem {
+  id: number;
+  title: string;
+  description: string;
+  icon?: string;
+}
 /**
  * Example: Team Member
  */
@@ -94,6 +107,7 @@ export interface Testimonial {
   avatar?: string;
   rating?: number;
   image: string;
+  icon: string;
 }
 
 // ==========================================

@@ -3,35 +3,73 @@ import { testimonials } from "../../data/testimonials";
 export default function TestimonialsSection() {
   return (
     // SECTION TESTIMONIALS HEIGHT max-h-723
-    <section className="w-full min-h-[723px] bg-white dark:bg-gray-900 flex py-24">
+    <section
+      id="testimonial"
+      className="
+      w-full max-h-180
+       bg-white
+        dark:bg-gray-900 py-24
+        "
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mb-16 text-center">
-          <h2 className="text-3xl  font-semibold text-gray-900 dark:text-white">
+        {/* TITLE */}
+        <div className="text-center">
+          <h2 className="text-4xl  font-bold text-gray-900 dark:text-white">
             What Partners Say About Working With Us
           </h2>
+
+          <p className="m-10 text-lg text-gray-500 dark:text-gray-400">
+            Trusted voices. Real experiences. Proven results.
+          </p>
         </div>
-        <div className="overflow-x-auto scroll-smooth  pb-4">
+        {/* TESTIMONIAL  */}
+        <div className="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-20">
           {testimonials.map((message) => (
             <div
               key={message.id}
-              className="w-[85vw] sm:w-[350px] snap-center rounded-3xl bg-gray-100 dark:bg-gray-800 p-8 shadow-lg"
+              className="relative min-w-[350px] rounded-3xl border  border-gray-200 dark:border-s-amber-500 bg-white dark:bg-gray-800 pb-20 shadow-sm"
             >
+              {/* QUOTE ICON */}
+
+              <img
+                src={message.icon}
+                alt="quote icon "
+                className="absolute -top-10  h-20 w-20"
+              />
+
               {/* RATING */}
               {message.rating && (
-                <p className="text-white">{"★".repeat(message.rating)}</p>
+                <p
+                  className="
+                  mb-6 pt-6 text-center text-2xl tracking-wide
+                text-yellow-400
+                "
+                >
+                  {"★".repeat(message.rating)}
+                </p>
               )}
 
               {/* TESTIMONI */}
-              <p className="mb-8 text-left landing-relaxed text-gray-700 dark:text-gray-300">
+              <p className="mb-8 text-center leading-relaxed text-gray-700 dark:text-gray-300">
                 {message.message}
               </p>
-              {/* PERSON NAME */}
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              {/* PERSON NAME and */}
+              <h3 className="mt-2 text-center  text-sm font-semibold text-gray-900 dark:text-white">
                 {message.name}
               </h3>
-              <p className="text-sm text-gray-500">
+              {/* ROLE AND COMPANY NAME */}
+              <p className="text-sm text-[#FF623E] flex justify-center">
                 {message.role} from {message.company}
               </p>
+
+              {/* AVATAR */}
+              <div className="mt-8 flex justify-center">
+                <img
+                  src={message.avatar}
+                  alt={message.name}
+                  className="absolute -bottom-10  h-20 w-20"
+                />
+              </div>
             </div>
           ))}
         </div>

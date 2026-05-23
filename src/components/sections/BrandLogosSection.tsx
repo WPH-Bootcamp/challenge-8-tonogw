@@ -1,6 +1,6 @@
-import { companyLogo } from "../../data/companyLogo";
+import { brandLogos } from "../../data/partners";
 
-export default function CompanyLogoSection() {
+export default function BrandLogosSection() {
   return (
     <section className="min-h-99 bg-white dark:bg-gray-900 flex items-center justify-center">
       <div className="py-6 -mx-auto max-w-7xl px-6 lg:px-8">
@@ -9,10 +9,13 @@ export default function CompanyLogoSection() {
             Trusted by Global Innovators & Leading Brands
           </h2>
 
-          <div className="flex flex-wrap items-center justify-center gap-10  sm:gap-x-10 lg:max-w-none lg:flex">
-            {companyLogo.map((logo) => (
+          <div
+            id="about"
+            className="flex flex-wrap items-center justify-center gap-10  sm:gap-x-10 lg:max-w-none lg:flex"
+          >
+            {brandLogos.map((logo) => (
               <img
-                key={logo.name}
+                key={logo.id}
                 src={logo.image}
                 alt={logo.name}
                 width={120}
