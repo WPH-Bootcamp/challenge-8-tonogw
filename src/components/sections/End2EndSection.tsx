@@ -4,14 +4,30 @@ export default function End2EndSection() {
   return (
     <section
       id="end2end"
-      className="w-full  bg-white dark:bg-black dark:text-white py-24"
+      className="
+      px-4
+      w-full
+        bg-white
+         dark:bg-black
+          dark:text-white 
+          py-24
+          "
     >
       {/* CONTAINER SECTION E2E */}
-      <div className="font-quicksand text-center bg-white dark:bg-black">
+      <div
+        className="
+      font-quicksand 
+      text-center
+       bg-white
+        dark:bg-black"
+      >
         <h2
           className="
-          
-        text-4xl font-bold text-gray-900 dark:text-white
+          text-[28px]
+        md:text-4xl
+         font-bold
+          text-gray-900
+           dark:text-white
         "
         >
           {end2endHeader.title}
@@ -20,7 +36,11 @@ export default function End2EndSection() {
         <p
           className="
           
-        mt-4 text-lg text-gray-400 dark:text-gray-400
+        mt-4 
+        text-[14px]
+         md:text-lg
+          text-gray-800
+           dark:text-gray-400
         "
         >
           {end2endHeader.description}
@@ -29,31 +49,62 @@ export default function End2EndSection() {
       {/* CARD CIRCLE SHAPE */}
       <div
         className="
-      mt-20  flex flex-wrap items-center justify-center gap-4
+              grid grid-cols-2 gap-4
+      md:grid-cols-4
+      mt-20   flex-wrap items-center justify-center 
       "
       >
         {end2endItems.map((e2e) => (
           <div
             key={e2e.id}
+            // className="
+            // sm:w-40 sm:h-40
+            // md:w-48 md:h-48
+            // lg:w-68 lg:h-68
+            // gap-1
+            // flex sm:grid-cols-2 md:grid-cols-3 lg:flex items-center justify-center
+            // rounded-full border border-[#DEDCDC] dark:border-[#181D27] bg-[#FAFAFA] dark:bg-[#0A0D12]
+            // text-center shadow-rm pb-4"
+
             className="
-            sm:w-42 sm:h-42
-            lg:w-68 lg:h-68
-            flex sm:grid-cols-2 flex-col items-center justify-center
-            rounded-full border border-[#DEDCDC] dark:border-[#181D27] bg-[#FAFAFA] dark:bg-[#0A0D12]
-            text-center shadow-rm"
+            flex flex-col
+            items-center
+            justify-center
+
+            aspect-square
+            w-full
+            max-w-[220px]
+
+            mx-auto
+
+            rounded-full
+            border
+
+          border-[#DEDCDC]
+          dark:border-[#181D27]
+
+          bg-[#FAFAFA]
+          dark:bg-[#0A0D12]
+
+            text-center
+
+            p-6
+            "
           >
             {/* ICON */}
             <img
               src={e2e.icon}
               alt={e2e.title}
-              className="mb-6  w-auto object-contain
+              className="mb-4  w-11 h-11 object-contain
             "
             />
 
             {/* TITLE */}
             <p
               className="
-            text-2xl font-display text-gray-900 dark:text-white
+              text-wrap
+            text-[14px] 
+            md:text-xl font-display text-gray-900 dark:text-white
             "
             >
               {e2e.title}
