@@ -49,9 +49,15 @@ export default function End2EndSection() {
       {/* CARD CIRCLE SHAPE */}
       <div
         className="
-              grid grid-cols-2 gap-4
-      md:grid-cols-4
-      mt-20   flex-wrap items-center justify-center 
+      mt-20
+
+      flex
+      flex-wrap
+      justify-center
+
+      gap-4
+      md:gap-6
+         
       "
       >
         {end2endItems.map((e2e) => (
@@ -72,10 +78,14 @@ export default function End2EndSection() {
             justify-center
 
             aspect-square
-            w-full
-            max-w-[220px]
+            w-43
+            h-43
 
-            mx-auto
+            md:w-52
+            md:h-52
+
+            lg:w-68.75
+            lg:h-68.75
 
             rounded-full
             border
@@ -92,19 +102,38 @@ export default function End2EndSection() {
             "
           >
             {/* ICON */}
-            <img
+            {/* <img
               src={e2e.icon}
               alt={e2e.title}
-              className="mb-4  w-11 h-11 object-contain
+              className="
+              mb-4  
+              w-12 h-12
+              
+              border
+              border-red-500
+
+              object-contain
             "
-            />
+            /> */}
+
+            <p
+              className="
+            lg:text-5xl
+            font-bold
+            text-[#FF623E]
+            "
+            >
+              {e2e.icon}
+            </p>
 
             {/* TITLE */}
             <p
               className="
               text-wrap
-            text-[14px] 
-            md:text-xl font-display text-gray-900 dark:text-white
+            text-sm
+            md:text-base
+            lg:text-xl 
+            font-semibold text-gray-900 dark:text-white
             "
             >
               {e2e.title}
@@ -134,7 +163,7 @@ export default function End2EndSection() {
             className="
           w-12 h-12 bg-blue-500 
           rounded-2xl 
-          flex-shrink-0 
+          shrink-0 
           flex items-center 
           justify-center
            text-white
