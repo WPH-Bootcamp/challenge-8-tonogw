@@ -7,7 +7,7 @@ export default function OurProcessSection {
     return (
 
         // CONTAINER OUR PROCESS
-        <section>
+        <section className="font-display bg-white dark:bg-black">
             <div
             {services.map((services: ServiceItem) => (
 
@@ -30,3 +30,4 @@ export default function OurProcessSection {
 
     )
 }
+

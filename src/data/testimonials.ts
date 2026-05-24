@@ -7,6 +7,19 @@ import quote from "../assets/testimonial/quote.png";
 export const testimonials: Testimonial[] = [
   {
     id: 1,
+    name: "John Lee",
+    role: "Creative Director",
+    company: "Innovate Corp",
+    message:
+      '"Working with this team was a game-changer for our project. They understood our vision and turned it into reality efficiently and effectively."',
+    rating: 5,
+    avatar: John,
+    image: "",
+    icon: quote,
+  },
+
+  {
+    id: 2,
     name: "Sarah Tan",
     role: "Product Manager",
     company: "Finovate",
@@ -19,7 +32,7 @@ export const testimonials: Testimonial[] = [
   },
 
   {
-    id: 2,
+    id: 3,
     name: "Emily Chen",
     role: "Marketing Head",
     company: "Tech Solution",
@@ -29,18 +42,5 @@ export const testimonials: Testimonial[] = [
     avatar: Emily,
     icon: quote,
     image: "",
-  },
-
-  {
-    id: 3,
-    name: "John Lee",
-    role: "Creative Director",
-    company: "Innovate Corp",
-    message:
-      '"Working with this team was a game-changer for our project. They understood our vision and turned it into reality efficiently and effectively."',
-    rating: 5,
-    avatar: John,
-    image: "",
-    icon: quote,
   },
 ];

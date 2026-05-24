@@ -8,6 +8,7 @@ export default function HeroSection() {
     <section
       id="hero"
       className="
+      font-display
     w-full
     bg-white
      text-gray-900

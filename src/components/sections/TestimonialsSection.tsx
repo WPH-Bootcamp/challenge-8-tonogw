@@ -6,9 +6,11 @@ export default function TestimonialsSection() {
     <section
       id="testimonials"
       className="
-      w-full max-h-180
+      
+      w-full 
        bg-white
-        dark:bg-gray-900 py-24
+        dark:bg-black
+         py-24
         "
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -27,14 +29,32 @@ export default function TestimonialsSection() {
           {testimonials.map((message) => (
             <div
               key={message.id}
-              className="relative min-w-[350px] rounded-3xl border  border-gray-200 dark:border-s-amber-500 bg-white dark:bg-gray-800 pb-20 shadow-sm"
+              className="
+              relative min-w-88 
+              overflow-visible
+              rounded-3xl border
+                border-gray-600
+                 dark:border-s-[#FF623E]
+                  bg-white
+                   dark:bg-[#0A0D12]
+                    pb-20 shadow-sm
+                    "
             >
               {/* QUOTE ICON */}
 
               <img
                 src={message.icon}
                 alt="quote icon "
-                className="absolute -top-10  h-20 w-20"
+                className="
+                
+                absolute 
+                -top-12
+                left-6
+                z-20
+                h-24 
+                w-24
+                object-contain
+                "
               />
 
               {/* RATING */}

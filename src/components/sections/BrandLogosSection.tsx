@@ -2,7 +2,7 @@ import { brandLogos } from "../../data/partners";
 
 export default function BrandLogosSection() {
   return (
-    <section className="min-h-99 bg-white dark:bg-gray-900 flex items-center justify-center">
+    <section className="font-display min-h-99 bg-white dark:bg-gray-900 flex items-center justify-center">
       <div className="py-6 -mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex flex-col items-center gap-12">
           <h2 className="text-center text-lg font-semibold text-gray-900 dark:text-white">
