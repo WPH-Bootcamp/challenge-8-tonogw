@@ -32,6 +32,7 @@ export default function TestimonialsSection() {
           <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-linear-to-l from-black to-transparent" />
           {/* CAROUSEL */}
           <div className="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-20" />
+
           {/* TESTIMONIAL  */}
           <div className="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-20">
             {testimonials.map((message) => (

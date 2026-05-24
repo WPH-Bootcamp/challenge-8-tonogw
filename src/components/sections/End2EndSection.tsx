@@ -36,8 +36,9 @@ export default function End2EndSection() {
           <div
             key={e2e.id}
             className="
-            w-68 h-68
-            flex  flex-col items-center justify-center
+            sm:w-42 sm:h-42
+            lg:w-68 lg:h-68
+            flex sm:grid-cols-2 flex-col items-center justify-center
             rounded-full border border-[#DEDCDC] dark:border-[#181D27] bg-[#FAFAFA] dark:bg-[#0A0D12]
             text-center shadow-rm"
           >

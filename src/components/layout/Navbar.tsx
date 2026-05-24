@@ -14,7 +14,7 @@ const Navbar = ({ navItems = navLink }: NavbarProps) => {
       className="
       font-display
      top-0 z-50 h-21  
-    bg-white/80 dark:bg-gray-900 
+    bg-white/80 dark:bg-black
     backdrop-blur-md
     "
     >

@@ -8,11 +8,12 @@ export default function HeroSection() {
     <section
       id="hero"
       className="
-      font-display
+      px-2
     w-full
     bg-white
      text-gray-900
-      dark:bg-gray-900
+      dark:bg-black
+
        dark:text-white
     "
     >
@@ -30,30 +31,34 @@ export default function HeroSection() {
     px-6
     py-24
 
-    lg:flex-row
+    flex-1
     lg:px-8
     "
       >
         {/* HERO LEFT CONTENT */}
         <div
           className="
-      max-w-162
-      flex-1
+          px-6
+      
+      flex-2
 
       "
         >
           <h1
             className="
-      text-5xl
+            px-6
+            lg:px-0
+      text-3xl
       font-bold
       leading-tight
 
-      lg:text-7xl
+      lg:text-[56px]
       "
           >
             {companyInfo.tagline.split("for")[0]}for
             <span
               className="
+              
             block text-[#FF623E]
             "
             >
@@ -63,15 +68,16 @@ export default function HeroSection() {
 
           <p
             className="
+            px-6
           mt-8
           max-w-145
-          text-lg
+          text-[16px]
           leading-relaxed
 
           bg-white
           text-gray-900
 
-          dark:bg-gray-900
+          dark:bg-black
           dark:text-white
           "
           >
@@ -80,10 +86,11 @@ export default function HeroSection() {
 
           <button
             className="
+            w-90
           mt-10
           flex
           h-14
-          w-45
+            lg:w-45
 
           items-center
           justify-center
