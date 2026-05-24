@@ -1,5 +1,5 @@
 import heroImage from "../../assets/heroright_dark.png";
-
+import heroImageLight from "../../assets/hero-light.png";
 import { companyInfo } from "../../data/company";
 
 export default function HeroSection() {
@@ -129,14 +129,24 @@ export default function HeroSection() {
         "
         >
           <img
-            src={heroImage}
-            alt="Hero Image"
             className="
+          hidden dark:block
           w-full
-          
-
           object-contain
           "
+            src={heroImage}
+            alt="Hero Image"
+          />
+
+          <img
+            className="
+            block dark:hidden
+            
+          w-full
+          object-contain
+          "
+            src={heroImageLight}
+            alt="Hero Image"
           />
         </div>
       </div>
