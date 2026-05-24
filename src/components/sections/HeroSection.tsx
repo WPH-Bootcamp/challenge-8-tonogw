@@ -8,7 +8,11 @@ export default function HeroSection() {
     <section
       id="hero"
       className="
-      px-2
+      
+      relative
+      overflow-hidden
+      min-h-screen
+      
     w-full
     bg-white
      text-gray-900
@@ -19,19 +23,19 @@ export default function HeroSection() {
     >
       <div
         className="
+        
     mx-auto
     flex
     max-w-7xl
 
     flex-col
     items-center
-    justify-between
+
     gap-16
 
-    px-6
+   
     py-24
 
-    flex-1
     lg:px-8
     "
       >
@@ -46,7 +50,7 @@ export default function HeroSection() {
         >
           <h1
             className="
-            px-6
+            
             lg:px-0
       text-3xl
       font-bold
@@ -68,7 +72,7 @@ export default function HeroSection() {
 
           <p
             className="
-            px-6
+            
           mt-8
           max-w-145
           text-[16px]
@@ -86,7 +90,8 @@ export default function HeroSection() {
 
           <button
             className="
-            w-90
+          
+            w-80
           mt-10
           flex
           h-14
@@ -126,7 +131,7 @@ export default function HeroSection() {
             alt="Hero Image"
             className="
           w-full
-          max-w-150
+          
 
           object-contain
           "
