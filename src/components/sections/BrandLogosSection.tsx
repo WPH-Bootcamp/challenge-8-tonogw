@@ -10,12 +10,13 @@ export default function BrandLogosSection() {
         py-20
         "
     >
-      <div className="py-6 mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="py-6 mx-auto max-w-7xl lg:px-8">
         {/* SECTION TITLE */}
         <div className="mb-14 text-center">
           <h2
             className="
-          text-lg font-semibold text-gray-900
+          text-[16px]
+            lg:text-lg font-semibold text-gray-900
            dark:text-white
            "
           >

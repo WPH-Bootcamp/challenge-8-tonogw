@@ -34,7 +34,7 @@ export default function HeroSection() {
     gap-16
 
    
-    py-24
+    py-16
 
     lg:px-8
     "
@@ -91,10 +91,12 @@ export default function HeroSection() {
           <button
             className="
           
-            w-80
+            w-full
           mt-10
           flex
-          h-14
+
+          h-11
+          lg:h-14
             lg:w-45
 
           items-center
