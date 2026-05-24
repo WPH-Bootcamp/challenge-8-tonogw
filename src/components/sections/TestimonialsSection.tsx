@@ -6,7 +6,7 @@ export default function TestimonialsSection() {
     <section
       id="testimonials"
       className="
-      
+      z-0
       w-full 
        bg-white
         dark:bg-black
@@ -27,9 +27,9 @@ export default function TestimonialsSection() {
 
         <div className="relative">
           {/* FADE LEFT */}
-          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-gradient-to-r from-black to-transparent" />
+          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-linear-to-r from-black to-transparent" />
           {/* FADE RIGHT */}
-          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-black to-transparent" />
+          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-linear-to-l from-black to-transparent" />
           {/* CAROUSEL */}
           <div className="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-20" />
           {/* TESTIMONIAL  */}
@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
               <div
                 key={message.id}
                 className="
-              relative min-w-88 
+              relative min-w-90 lg:min-w-148 
               overflow-visible
               rounded-3xl border
                 border-gray-600
@@ -54,13 +54,13 @@ export default function TestimonialsSection() {
                   src={message.icon}
                   alt="quote icon "
                   className="
-                          absolute 
-                          -top-12
+                          absolute
+                          -top-10
                           left-6
                           z-20
-                          h-24 
-                          w-24
-                          object-contain
+                          h-20 
+                          w-20
+                          
                           "
                 />
 
