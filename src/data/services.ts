@@ -16,43 +16,43 @@ export const services: ServiceItem[] = [
   {
     id: 1,
     title: "Discovery & Consultation",
-    description: "Service description here...",
-    icon: one,
+    description: "Understand Your Needs & Goals",
+    image: "1",
   },
 
   {
     id: 2,
     title: "Planning & Strategy",
-    description: "",
-    icon: two,
+    description: "Build a Clear, Scalable Roadmap",
+    image: "2",
   },
 
   {
     id: 3,
     title: "Design & Prototyping",
-    description: "",
-    icon: three,
+    description: "Craft UX That Converts",
+    image: "3",
   },
 
   {
     id: 4,
     title: "Development & Implementation",
-    description: "",
-    icon: four,
+    description: "Deliver With Speed & Precision",
+    image: "4",
   },
 
   {
     id: 5,
     title: "Testing & Optimization",
-    description: "",
-    icon: five,
+    description: "Ensure Quality at Every Step",
+    image: "5",
   },
 
   {
     id: 6,
     title: "Launch & Growth",
-    description: "",
-    icon: six,
+    description: "Scale, Measure & Improve Continously",
+    image: "6",
   },
   // Add more services...
 ];

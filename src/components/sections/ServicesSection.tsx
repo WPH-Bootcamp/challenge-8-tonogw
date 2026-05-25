@@ -1,18 +1,20 @@
-import { services } from "../../data/services";
+import { services, ServicesHeader } from "../../data/services";
 
-const ServicesSection = () => {
+export default function ServicesSection() {
   return (
     <section>
+      <div>
+        <h2>{ServicesHeader.title}</h2>
+        <p>{ServicesHeader.description}</p>
+      </div>
       {services.map((services) => (
-        <ServiceCard
+        <div
           key={services.id}
           title={services.title}
           description={services.description}
           icon={services.icon}
-        />
+        ></div>
       ))}
     </section>
   );
-};
-
-export default ServicesSection;
+}

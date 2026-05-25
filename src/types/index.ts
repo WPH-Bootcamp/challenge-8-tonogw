@@ -62,7 +62,6 @@ export interface ServiceItem {
   id: number;
   title: string;
   description: string;
-  icon?: string;
   image?: string;
 }
 
@@ -79,6 +78,7 @@ export interface SolutionItem {
   description: string;
   icon?: string;
 }
+
 /**
  * Example: Team Member
  */

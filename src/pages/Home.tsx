@@ -2,7 +2,7 @@ import Navbar from "../components/layout/Navbar";
 // import Footer from "../components/layout/Footer";
 import HeroSection from "../components/sections/HeroSection";
 // import AboutSection from "../components/sections/AboutSection";
-// import ServicesSection from "../components/sections/ServicesSection";
+import OurProcessSection from "../components/sections/OurProcessSection";
 import TestimonialsSection from "../components/sections/TestimonialsSection";
 // import ContactSection from "../components/sections/ContactSection";
 import BrandLogosSection from "../components/sections/BrandLogosSection";
@@ -19,7 +19,7 @@ const Home = () => {
         <BrandLogosSection />
         <End2EndSection />
         {/* <AboutSection /> */}
-        {/* <ServicesSection /> */}
+        <OurProcessSection />
         <TestimonialsSection />
         {/* <ContactSection /> */}
       </main>
