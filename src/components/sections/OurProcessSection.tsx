@@ -193,8 +193,8 @@ export default function OurProcessSection() {
 
             rounded-full
             bg-[#FF623E]
-            text-gray-900
-            dark:text-white
+            
+            text-white
             "
                 >
                   {item.id}
