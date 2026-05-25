@@ -1,12 +1,5 @@
 import type { ServiceItem } from "../types";
 
-import one from "../assets/icon/one.png";
-import two from "../assets/icon/two.svg";
-import three from "../assets/icon/three.png";
-import four from "../assets/icon/four.svg";
-import five from "../assets/icon/five.svg";
-import six from "../assets/icon/six.png";
-
 export const ServicesHeader = {
   title: "Our Process",
   description: "Clear steps. Smart execution. Results you can count on.",
