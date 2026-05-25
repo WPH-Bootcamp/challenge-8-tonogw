@@ -7,7 +7,7 @@ export default function BrandLogosSection() {
       className="
       bg-white
        dark:bg-black
-        py-20
+        
         "
     >
       <div className="py-6 mx-auto max-w-7xl lg:px-8">

@@ -11,7 +11,7 @@ export default function HeroSection() {
       
       relative
       overflow-hidden
-      min-h-screen
+    
       
     w-full
     bg-white
@@ -29,12 +29,13 @@ export default function HeroSection() {
     max-w-7xl
 
     flex-col
+    lg:flex-row
     items-center
 
     gap-16
 
    
-    py-16
+   
 
     lg:px-8
     "
@@ -44,7 +45,7 @@ export default function HeroSection() {
           className="
           px-6
       
-      flex-2
+     
 
       "
         >
@@ -133,6 +134,8 @@ export default function HeroSection() {
           hidden dark:block
           w-full
           object-contain
+          lg:w-186.75
+          lg:h-186.75
           "
             src={heroImage}
             alt="Hero Image"

@@ -27,11 +27,16 @@ export default function TestimonialsSection() {
 
         <div className="relative">
           {/* FADE LEFT */}
-          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-linear-to-r from-black to-transparent" />
+          <div className="hidden dark:block pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-linear-to-r dark:from-black to-transparent" />
+          <div className="block dark:hidden pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-linear-to-r from-white to-transparent" />
           {/* FADE RIGHT */}
-          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-linear-to-l from-black to-transparent" />
+          <div className="hidden dark:block pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-linear-to-l dark:from-black to-transparent" />
+          <div className="block dark:hidden pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-linear-to-l from-white to-transparent" />
           {/* CAROUSEL */}
-          <div className="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-20" />
+          <div
+            className="
+          mt-4 flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-20"
+          />
 
           {/* TESTIMONIAL  */}
           <div className="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-20">
@@ -39,6 +44,7 @@ export default function TestimonialsSection() {
               <div
                 key={message.id}
                 className="
+                mt-6
               relative min-w-90 lg:min-w-148 
               overflow-visible
               rounded-3xl border
