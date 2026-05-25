@@ -2,27 +2,125 @@ import { solutions, solutionHeader } from "../../data/solutions";
 
 export default function SolutionSection() {
   return (
-    <section id="solutions" className="bg-white dark:bg-black">
-      <div className="text-center font-bold text-gray-900 dark:text-white">
-        <h2 className="text-[40px] font-bold">{solutionHeader.title}</h2>
+    <section
+      id="solutions"
+      className="
+    bg-white dark:bg-black py-2 px-6
+    "
+    >
+      {/* HEADER */}
+      <div
+        className="
+      text-center 
+      "
+      >
+        <h2
+          className="
+          text-xs font-bold 
+      text-gray-900 dark:text-white md:text-[40px] "
+        >
+          {solutionHeader.title}
+        </h2>
 
-        <p className="text-lg font-medium dark:text-gray-400">
+        <p
+          className="
+        text-sm md:text-lg 
+        font-medium dark:text-gray-400
+        "
+        >
           {solutionHeader.description}
         </p>
       </div>
-      <div className="mx-auto max-w-360">
+
+      {/* GRID WRAPPER */}
+      <div
+        className="
+      mx-auto mt-16 grid max-w-360
+      grid-cols-1 gap-10
+      
+
+      md:grid-cols-2
+      lg:grid-cols-3
+      "
+      >
         {/*  */}
         {solutions.map((sols) => (
           <div
             key={sols.id}
             className="
             relative
-                    grid sm:grid-cols-1 lg:grid-cols-3
+             
                     "
           >
-            <div className="text-left grid grid-cols-3 dark:text-white">
-              <h3>{sols.title}</h3>
-              <img src={sols.icon} alt="" />
+            <div
+              className="
+            text-left 
+             bg-[#FAFAFA] dark:text-white
+             dark:bg-[#0A0D12]
+             rounded-2xl
+             p-px
+             border 
+             border-[#DEDCDC] 
+             dark:border-[#181D27]
+             
+             
+             hover:bg-linear-to-r
+             hover:from-[#FF6C37]
+             hover:to-[#DEDCDC]}
+                transition-all
+                duration-300
+            lg:w-93 lg:h-45
+             "
+            >
+              <div
+                className="
+                relative
+                rounded-2xl
+
+                bg-[#FAFAFA]
+                dark:bg-[#0A0D12]
+
+                dark:text-white
+                 lg:w-93 lg:h-45
+                 
+                "
+              >
+                <img
+                  src={sols.icon}
+                  alt={sols.title}
+                  className="
+                absolute
+                -top-8
+                pl-5
+              "
+                />
+                <h3
+                  className="
+                pt-16
+              p-8
+              font-bold
+              text-nowrap
+              text-xl
+             
+              
+              "
+                >
+                  {sols.title}
+                </h3>
+                <p
+                  className="
+                
+                pl-8
+                text-left
+              text-[#717680]
+              font-medium
+              dark:text-white
+             
+              "
+                >
+                  {sols.description}
+                </p>
+              </div>
             </div>
           </div>
         ))}

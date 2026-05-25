@@ -1,13 +1,13 @@
 import type { SolutionItem } from "../types";
-import uix from "../assets/solutions/web.svg";
-import web from "../assets/solutions/web.svg";
-import mobile from "../assets/solutions/mobile.svg";
-import cloud from "../assets/solutions/cloud.svg";
-import software from "../assets/solutions/software.svg";
-import ti from "../assets/solutions/ti.svg";
-import it from "../assets/solutions/it.svg";
-import qa from "../assets/solutions/qa.svg";
-import cs from "../assets/solutions/cyber.svg";
+import uix from "../assets/solutions/web.png";
+import web from "../assets/solutions/web.png";
+import mobile from "../assets/solutions/mobile.png";
+import cloud from "../assets/solutions/Cloud.png";
+import software from "../assets/solutions/Software.png";
+import ti from "../assets/solutions/TI.png";
+import it from "../assets/solutions/it.png";
+import qa from "../assets/solutions/qa.png";
+import cs from "../assets/solutions/cs.png";
 
 export const solutionHeader = {
   title: "Smart IT Solutions That Grow With You",
@@ -17,7 +17,7 @@ export const solutionHeader = {
 export const solutions: SolutionItem[] = [
   {
     id: 1,
-    title: "web Development",
+    title: "Web Development",
     description: "Build fast, scalable, and SEO-friendly",
     icon: web,
   },

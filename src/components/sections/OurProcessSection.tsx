@@ -83,16 +83,16 @@ export default function OurProcessSection() {
                     
                     w-133
                     
-                rounded-2xl
-                border
-                border-gray-200
+                    rounded-2xl
+                    border
+                    border-gray-200
 
-                bg-white
+                    bg-[#FAFAFA]
                 
-                shadow-sm
+                    shadow-sm
 
-                dark:border-gray-800
-                dark:bg-[#0A0D12]
+                    dark:border-gray-800
+                    dark:bg-[#0A0D12]
                 
                 ${openId === item.id ? "h-29" : "h-20.5"}
 
@@ -108,7 +108,7 @@ export default function OurProcessSection() {
                     >
                       <h3
                         className="
-                        
+                        pt-4
                     text-left
                         text-base
                         lg:text-xl
@@ -142,6 +142,7 @@ export default function OurProcessSection() {
                     {openId === item.id && (
                       <p
                         className="
+                        p-1
                 mt-4
                 text-gray-600
                 dark:text-gray-400
@@ -174,7 +175,7 @@ export default function OurProcessSection() {
                 
                 h-29
                 w-0.5
-                bg-[#DFDFDF]
+                bg-[##FAFAFA]
                 dark:bg-[#252B37]
                 "
                   />
@@ -218,7 +219,7 @@ export default function OurProcessSection() {
                         rounded-2xl
                         border
                         border-gray-200
-                        bg-white
+                        bg-[#FAFAFA]
                         
                         shadow-sm
 
@@ -236,7 +237,7 @@ export default function OurProcessSection() {
                       <h3
                         className="
 
-                        
+                        pt-4
                         text-left
                         text-base
                         lg:text-xl font-bold
@@ -269,6 +270,7 @@ export default function OurProcessSection() {
                     {openId === item.id && (
                       <p
                         className="
+                        p-1
                       text-left
                     mt-4
                     text-gray-400
@@ -296,7 +298,7 @@ export default function OurProcessSection() {
             border
             border-gray-200
 
-            bg-white
+            bg-[#FAFAFA]
             
             shadow-sm
 
