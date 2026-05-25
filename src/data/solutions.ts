@@ -9,14 +9,12 @@ import it from "../assets/solutions/it.svg";
 import qa from "../assets/solutions/qa.svg";
 import cs from "../assets/solutions/cyber.svg";
 
-export const solutions: SolutionItem[] = [
-  {
-    id: 0,
-    title: "Smart IT Solutions That Grow With You",
-    description: "Tailored tech to boost efficiency, security, and results.",
-    icon: "",
-  },
+export const solutionHeader = {
+  title: "Smart IT Solutions That Grow With You",
+  description: "Tailored tech to boost efficiency, security, and results.",
+};
 
+export const solutions: SolutionItem[] = [
   {
     id: 1,
     title: "web Development",

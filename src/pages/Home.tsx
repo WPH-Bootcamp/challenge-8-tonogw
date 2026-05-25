@@ -7,6 +7,7 @@ import TestimonialsSection from "../components/sections/TestimonialsSection";
 // import ContactSection from "../components/sections/ContactSection";
 import BrandLogosSection from "../components/sections/BrandLogosSection";
 import End2EndSection from "../components/sections/End2EndSection";
+// import SolutionSection from "../components/sections/SolutionsSection";
 // export default function Home(){}
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
         <End2EndSection />
         {/* <AboutSection /> */}
         <OurProcessSection />
+        {/* <SolutionSection /> */}
         <TestimonialsSection />
         {/* <ContactSection /> */}
       </main>

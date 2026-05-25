@@ -85,7 +85,7 @@ export default function OurProcessSection() {
                     
                 rounded-2xl
                 border
-                border-blue-700
+                border-gray-200
 
                 bg-white
                 
@@ -230,6 +230,7 @@ export default function OurProcessSection() {
                     <div
                       className="
                     flex items-start justify-between
+                    p-1
                     "
                     >
                       <h3
