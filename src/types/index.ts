@@ -79,6 +79,12 @@ export interface SolutionItem {
   icon?: string;
 }
 
+export interface IndustryItem {
+  id: number;
+  title: string;
+  description: string;
+  image?: string;
+}
 /**
  * Example: Team Member
  */
