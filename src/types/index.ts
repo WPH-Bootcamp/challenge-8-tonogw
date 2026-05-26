@@ -84,6 +84,7 @@ export interface IndustryItem {
   title: string;
   description: string;
   image?: string;
+  slug: string;
 }
 /**
  * Example: Team Member

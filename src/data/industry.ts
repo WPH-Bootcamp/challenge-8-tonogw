@@ -12,6 +12,7 @@ export const IndustryHeader = {
 export const industryItems: IndustryItem[] = [
   {
     id: 1,
+    slug: "fintech",
     title: "Fintech",
     description:
       "We build secure, scalable, and compliant fintech solutions - from digital wallets to core banking systems - tailored to modern financial needs.",
@@ -20,6 +21,7 @@ export const industryItems: IndustryItem[] = [
 
   {
     id: 2,
+    slug: "ecommerce",
     title: "E-Commerce",
     description:
       "Boost your online sales with fast, reliable platforms designed for seamless shopping experiences, inventory management, and payment integration.",
@@ -28,6 +30,7 @@ export const industryItems: IndustryItem[] = [
 
   {
     id: 3,
+    slug: "healthcare",
     title: "Healthcare",
     description:
       "Empowering healthcare providers with digital solutions that improve patient care, ensure data privacy, and streamline operational workflows.",
