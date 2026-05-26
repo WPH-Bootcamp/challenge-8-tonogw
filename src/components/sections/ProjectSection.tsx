@@ -65,7 +65,9 @@ export default function ProjectSection() {
             <h3
               className="
             text-[#FF623E]
-            text-base
+            pt-1
+            text-sm
+            lg:text-base
             font-medium
             "
             >
@@ -73,7 +75,7 @@ export default function ProjectSection() {
             </h3>
             <p
               className="
-            py-4
+            py-2
             text-base
             lg:text-xl
             font-bold

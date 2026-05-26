@@ -97,7 +97,10 @@ export default function IndustrySection() {
                 pl-4
                 text-left
                 text-2xl
+                lg:text-[32px]
                 font-bold
+                
+                
                 transition-all
                 duration-300
 
