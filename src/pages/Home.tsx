@@ -10,7 +10,7 @@ import End2EndSection from "../components/sections/End2EndSection";
 import SolutionSection from "../components/sections/SolutionsSection";
 import IndustrySection from "../components/sections/IndustrySection";
 import ProjectSection from "../components/sections/ProjectSection";
-
+import FAQSection from "../components/sections/FAQSection";
 // export default function Home(){}
 
 const Home = () => {
@@ -28,6 +28,7 @@ const Home = () => {
         <IndustrySection />
         <ProjectSection />
         <TestimonialsSection />
+        <FAQSection />
         {/* <ContactSection /> */}
       </main>
 

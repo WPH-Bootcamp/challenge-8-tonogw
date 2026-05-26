@@ -92,6 +92,12 @@ export interface IndustryItem {
   image?: string;
   slug: string;
 }
+
+export interface Quesionnaire {
+  id: number;
+  question: string;
+  answer: string;
+}
 /**
  * Example: Team Member
  */
