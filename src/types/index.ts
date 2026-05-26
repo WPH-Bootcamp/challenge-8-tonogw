@@ -45,6 +45,12 @@ export interface BrandLogo {
   image: string;
 }
 
+export interface Project {
+  id: number;
+  name: string;
+  portofolio: string;
+  image: string;
+}
 /**
  * TODO: Define interfaces untuk data yang digunakan di sections
  *
