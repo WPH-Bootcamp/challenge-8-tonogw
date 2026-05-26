@@ -260,7 +260,7 @@ export default function OurProcessSection() {
                     "
                       >
                         {openId === item.id ? (
-                          <ChevronDown size={24} />
+                          <ChevronUp size={24} />
                         ) : (
                           <ChevronDown size={24} />
                         )}
@@ -328,7 +328,7 @@ export default function OurProcessSection() {
                     "
                     >
                       {openId === item.id ? (
-                        <ChevronDown size={24} />
+                        <ChevronUp size={24} />
                       ) : (
                         <ChevronDown size={24} />
                       )}
