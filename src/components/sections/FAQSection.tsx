@@ -1,7 +1,7 @@
 import { questionnaires } from "../../data/questionnaires";
 import { FAQHeader } from "../../data/questionnaires";
 import { Minus, Plus } from "lucide-react";
-
+import imgConsult from "../../assets/consultation.png";
 import { useState } from "react";
 
 export default function FAQSection() {
@@ -11,10 +11,12 @@ export default function FAQSection() {
     <section
       id="faq"
       className="
+
         bg-white
         dark:bg-black
         mx-4
-        lg:mx-30
+        lg:px-30
+        lg:py-20
         "
     >
       {/* HEADER */}
@@ -80,7 +82,7 @@ export default function FAQSection() {
              border-y border-[#E4E7EC]
              dark:border-[#252B37]
              bg-[#FAFAFA]
-             dark:bg-gray-900
+             dark:bg-black
              py-7
              
              lg:col-span-2
@@ -134,15 +136,54 @@ export default function FAQSection() {
         </div>
         <div
           className="
+          p-6
           mt-20
           bg-[#CC4E32]
           ml-18
           rounded-2xl
           lg:rounded-3xl
+          dark:text-white
 
         "
         >
-          test
+          <h3
+            className="
+          
+          lg:text-[36px]
+          text-white
+          font-bold
+          "
+          >
+            Let's talk it through
+          </h3>
+          <p
+            className="
+            mt-1
+          text-lg
+          text-white
+          "
+          >
+            book a free consultation with our team
+          </p>
+          <img
+            src={imgConsult}
+            alt="Consultation"
+            className="
+          mt-6
+          "
+          />
+          <button
+            className="
+            w-full
+            rounded-full
+            mt-6
+          bg-[#FFFFFF]
+          font-bold
+          p-2
+          "
+          >
+            Free Consultation
+          </button>
         </div>
       </div>
     </section>
