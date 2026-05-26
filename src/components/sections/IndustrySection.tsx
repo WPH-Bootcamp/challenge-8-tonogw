@@ -23,11 +23,13 @@ export default function IndustrySection() {
         dark:bg-black
         py-24
         text-left
+        pl-5
         "
     >
       {/* HEADER */}
       <div
         className="
+        sm:px-2
       lg:px-35
       "
       >
@@ -75,7 +77,8 @@ export default function IndustrySection() {
 
       text-[#AAAAAA]
       dark:text-[#535862]
-      lg:grid-cols-[240px_1fr]
+      grid
+      lg:grid-cols-[280px_1fr]
       "
       >
         {/* LEFT MENU */}
@@ -85,20 +88,23 @@ export default function IndustrySection() {
               key={item.id}
               onClick={() => setActiveIndustry(item.slug)}
               className={`
-                border-l-4
-      
-                py-5
+                border-l-4              
+                
+                mt-4
+                gap-4
+                py-8
+                sm:pl-1
                 pl-4
                 text-left
                 text-2xl
-                font-semibold
+                font-bold
                 transition-all
                 duration-300
 
                 ${
                   activeIndustry === item.slug
-                    ? "border-[#FF623E] text-white"
-                    : "border-gray-700 text-gray-500"
+                    ? "h-6 lg:h-8 border-[#FF623E] text-black font-bold dark:text-white"
+                    : "h-6 lg:h-8 border-gray-700 text-gray-500"
                 }
             `}
             >
@@ -114,7 +120,7 @@ export default function IndustrySection() {
                 rounded-3xl
               
                 
-                p-8
+                p-5
               "
         >
           <p
