@@ -164,7 +164,7 @@ export default function FAQSection() {
         >
           <h3
             className="
-          
+          text-[28px]
           lg:text-[36px]
           text-white
           font-bold

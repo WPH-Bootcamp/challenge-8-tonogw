@@ -11,6 +11,7 @@ import SolutionSection from "../components/sections/SolutionsSection";
 import IndustrySection from "../components/sections/IndustrySection";
 import ProjectSection from "../components/sections/ProjectSection";
 import FAQSection from "../components/sections/FAQSection";
+import LetsTalkSection from "../components/sections/LetsTalkSection";
 // export default function Home(){}
 
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
         <ProjectSection />
         <TestimonialsSection />
         <FAQSection />
+        <LetsTalkSection />
         {/* <ContactSection /> */}
       </main>
 
