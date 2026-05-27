@@ -8,45 +8,37 @@ export default function HeroSection() {
     <section
       id="hero"
       className="
-      
       relative
       overflow-hidden
-    
-      
-    w-full
     bg-white
-     text-gray-900
-      dark:bg-black
-
-       dark:text-white
+    text-gray-900
+    dark:bg-black
+    dark:text-white
     "
     >
       <div
         className="
-        
-    mx-auto
-    flex
-    max-w-7xl
+        relative
 
-    flex-col
-    lg:flex-row
-    items-center
+        min-h-screen
 
-    gap-16
+        flex
+        flex-col
 
-   
-   
-
-    lg:px-8
+        lg:block
     "
       >
         {/* HERO LEFT CONTENT */}
         <div
           className="
+          relative
+          z-20
           px-6
-      
-     
+          pt-20
 
+          lg:max-w-180
+          lg:pl-20
+          lg:pt-40
       "
         >
           <h1
@@ -63,7 +55,6 @@ export default function HeroSection() {
             {companyInfo.tagline.split("for")[0]}for
             <span
               className="
-              
             block text-[#FF623E]
             "
             >
@@ -79,10 +70,9 @@ export default function HeroSection() {
           text-[16px]
           leading-relaxed
 
-          bg-white
+       
           text-gray-900
 
-          dark:bg-black
           dark:text-white
           "
           >
@@ -124,32 +114,33 @@ export default function HeroSection() {
         {/* HERO IMAGE RIGHT */}
         <div
           className="
-        flex
-        flex-1
-        justify-center
+          mt-12
 
-        "
+          lg:absolute
+          lg:top-0
+          lg:right-0
+          lg:mt-0
+         "
         >
+          {/* DARK IMAGE */}
           <img
             className="
           hidden dark:block
           w-full
           object-contain
           lg:w-186.75
-          lg:h-186.75
           "
             src={heroImage}
             alt="Hero Image"
           />
 
+          {/* LIGHT IMAGE */}
           <img
             className="
-            block dark:hidden
-            
+          block dark:hidden
           w-full
           object-contain
-          md:w-186.75
-          md:h-186.75
+          lg:w-186.75
           "
             src={heroImageLight}
             alt="Hero Image"
