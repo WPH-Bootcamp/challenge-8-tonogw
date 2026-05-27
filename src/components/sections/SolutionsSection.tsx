@@ -66,10 +66,10 @@ export default function SolutionSection() {
              
              hover:bg-linear-to-r
              hover:from-[#FF6C37]
-             hover:to-[#DEDCDC]}
+             hover:to-[#DEDCDC]
                 transition-all
                 duration-300
-            lg:w-93 lg:h-45
+            
              "
             >
               <div
@@ -81,7 +81,7 @@ export default function SolutionSection() {
                 dark:bg-[#0A0D12]
 
                 dark:text-white
-                 lg:w-93 lg:h-45
+                 w-full
                  
                 "
               >

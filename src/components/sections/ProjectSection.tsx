@@ -44,6 +44,7 @@ export default function ProjectSection() {
         className="
         text-lg
          grid
+         md:grid-cols-2
       lg:grid-cols-3
       gap-4
        mx-4

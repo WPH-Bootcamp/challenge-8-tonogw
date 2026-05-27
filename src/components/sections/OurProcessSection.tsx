@@ -16,6 +16,8 @@ export default function OurProcessSection() {
     dark:bg-black
     dark:text-[#FDFDFD]
     py-3
+    px4
+
     "
     >
       {/* OUR PROCESS HEADER  */}
@@ -47,6 +49,7 @@ export default function OurProcessSection() {
       <div
         className="
       mx-auto max-w-6xl
+      px-4
       "
       >
         {/* WITH VALIDATION ODD/EVEN NUMBER */}
@@ -74,6 +77,7 @@ export default function OurProcessSection() {
                 className={`
             hidden
             lg:block
+            justify-end
             ${isOdd ? "justify-end" : "justify-start"}
             `}
               >
@@ -81,7 +85,8 @@ export default function OurProcessSection() {
                   <div
                     className={`
                     
-                    w-133
+                    w-full
+                    max-w-133
                     
                     rounded-2xl
                     border
@@ -94,7 +99,7 @@ export default function OurProcessSection() {
                     dark:border-gray-800
                     dark:bg-[#0A0D12]
                 
-                ${openId === item.id ? "h-29" : "h-20.5"}
+                ${openId === item.id ? "h-29" : "min-h-20.5"}
 
                 `}
                   >
@@ -172,10 +177,10 @@ export default function OurProcessSection() {
                 absolute
                 top-10
                 lg:top-12
-                
                 h-29
+                bottom-0
                 w-0.5
-                bg-[##FAFAFA]
+                bg-[#252B37]
                 dark:bg-[#252B37]
                 "
                   />
@@ -208,6 +213,7 @@ export default function OurProcessSection() {
                     
                     hidden
                     lg:block
+                    justify-start
                     ${isOdd ? "justify-start" : "justify-end"}
 
                     `}
@@ -215,7 +221,8 @@ export default function OurProcessSection() {
                 {!isOdd && (
                   <div
                     className={`
-                        w-133
+                        w-full
+                        max-w-133
                         rounded-2xl
                         border
                         border-gray-200
@@ -225,7 +232,7 @@ export default function OurProcessSection() {
 
                         dark:border-gray-800
                         dark:bg-[#0A0D12]
-                        ${openId === item.id ? "h-29" : "h-20.5"}
+                        ${openId === item.id ? "h-29" : "min-h-20.5"}
                         `}
                   >
                     <div

@@ -14,8 +14,8 @@ export default function FAQSection() {
 
         bg-white
         dark:bg-black
-        mx-4
-        lg:px-30
+        px-4
+        lg:px-34
         lg:py-20
         "
     >
@@ -64,6 +64,14 @@ export default function FAQSection() {
             {FAQHeader.subtitle}
           </p>
         </div>
+      </div>
+      <div
+        className="
+        
+      grid grid-cols-1 lg:grid-cols-3
+      gap-8 
+      "
+      >
         {/* QUESTIONNAIRES */}
         {/* WITH VALIDATION PLUS / MINUS */}
         <div
@@ -72,6 +80,9 @@ export default function FAQSection() {
         lg:col-span-2
         flex flex-col
       
+        border-t 
+        border-[#E4E7EC]
+        dark:border-[#252B37]
         "
         >
           {questionnaires.map((item) => (
@@ -79,7 +90,7 @@ export default function FAQSection() {
               key={item.id}
               className="
              
-             border-y border-[#E4E7EC]
+             border-b border-[#E4E7EC]
              dark:border-[#252B37]
              bg-[#FAFAFA]
              dark:bg-black
@@ -98,7 +109,7 @@ export default function FAQSection() {
               >
                 <h3
                   className="
-                text-left text-base lg:text-lg font-semibold
+                text-left text-base lg:text-2xl font-semibold
                 dark:text-white
                 "
                 >
@@ -124,7 +135,7 @@ export default function FAQSection() {
               {openId === item.id && (
                 <p
                   className="
-                    mt-4 text-sm leading-relaxed
+                    mt-4 text-sm lg:text-xl leading-relaxed
                     dark:text-[#A4A7AE]
                     "
                 >
@@ -136,13 +147,18 @@ export default function FAQSection() {
         </div>
         <div
           className="
+         
           p-6
+          
           mt-20
           bg-[#CC4E32]
-          ml-18
+          
           rounded-2xl
           lg:rounded-3xl
+         
           dark:text-white
+
+          lg:self-start
 
         "
         >
@@ -180,6 +196,7 @@ export default function FAQSection() {
           bg-[#FFFFFF]
           font-bold
           p-2
+          text-black
           "
           >
             Free Consultation
