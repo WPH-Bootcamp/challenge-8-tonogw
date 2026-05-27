@@ -110,42 +110,44 @@ export default function HeroSection() {
             Let's Talk
           </a>
         </div>
+      </div>
 
-        {/* HERO IMAGE RIGHT */}
-        <div
-          className="
+      {/* HERO IMAGE RIGHT */}
+      <div
+        className="
           mt-12
 
           lg:absolute
-          lg:top-0
+          lg:-top-24
           lg:right-0
           lg:mt-0
          "
-        >
-          {/* DARK IMAGE */}
-          <img
-            className="
+      >
+        {/* DARK IMAGE */}
+        <img
+          className="
+          z-100
           hidden dark:block
           w-full
           object-contain
           lg:w-186.75
           "
-            src={heroImage}
-            alt="Hero Image"
-          />
+          src={heroImage}
+          alt="Hero Image"
+        />
 
-          {/* LIGHT IMAGE */}
-          <img
-            className="
+        {/* LIGHT IMAGE */}
+        <img
+          className="
+          z-100
           block dark:hidden
           w-full
           object-contain
           lg:w-186.75
           "
-            src={heroImageLight}
-            alt="Hero Image"
-          />
-        </div>
+          src={heroImageLight}
+          alt="Hero Image"
+        />
       </div>
     </section>
   );
