@@ -51,7 +51,7 @@ export default function HeroSection() {
         >
           <h1
             className="
-            
+            z-20
             lg:px-0
       text-3xl
       font-bold
@@ -89,7 +89,8 @@ export default function HeroSection() {
             {companyInfo.description}
           </p>
 
-          <button
+          <a
+            href="#letstalk"
             className="
           
             w-full
@@ -117,7 +118,7 @@ export default function HeroSection() {
           "
           >
             Let's Talk
-          </button>
+          </a>
         </div>
 
         {/* HERO IMAGE RIGHT */}
@@ -147,6 +148,8 @@ export default function HeroSection() {
             
           w-full
           object-contain
+          md:w-186.75
+          md:h-186.75
           "
             src={heroImageLight}
             alt="Hero Image"

@@ -3,6 +3,7 @@ import type { NavItem } from "../../types";
 import yourlogo from "../../assets/logo/logo-yourlogo.png";
 import yourlogodark from "../../assets/logo/yourlogodark.png";
 import { useEffect, useState } from "react";
+import LetsTalkSection from "../sections/LetsTalkSection";
 
 interface NavbarProps {
   // Define your props here
@@ -81,14 +82,15 @@ const Navbar = ({ navItems = navLink }: NavbarProps) => {
         </button>
 
         {/* BUTTON */}
-        <button
+        <a
+          href="#letstalk"
           className="
           hidden lg:flex h-11 w-[197px] items-center justify-center
           rounded-full bg-[#FF623E] text-sm font-semibold text-white
         "
         >
           Let's Discuss
-        </button>
+        </a>
         {/* MOBILE MENU */}
         <button
           className="

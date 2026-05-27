@@ -15,7 +15,7 @@ export default function OurProcessSection() {
     dark:bg-black
     dark:text-[#FDFDFD]
     py-3
-    px4
+    px-4
 
     "
     >
@@ -48,7 +48,7 @@ export default function OurProcessSection() {
       <div
         className="
       mx-auto max-w-6xl
-      px-4
+    
       "
       >
         {/* WITH VALIDATION ODD/EVEN NUMBER */}
@@ -85,7 +85,9 @@ export default function OurProcessSection() {
                     className={`
                     
                     w-full
-                    max-w-133
+                    sm:max-w-77.25
+
+                    lg:max-w-133
                     
                     rounded-2xl
                     border
@@ -146,7 +148,7 @@ export default function OurProcessSection() {
                     {openId === item.id && (
                       <p
                         className="
-                        p-1
+                        
                 mt-4
                 text-gray-600
                 dark:text-gray-400
@@ -176,7 +178,7 @@ export default function OurProcessSection() {
                 absolute
                 top-10
                 lg:top-12
-                h-29
+                h-27
                 bottom-0
                 w-0.5
                 bg-[#DFDFDF]
@@ -299,7 +301,9 @@ export default function OurProcessSection() {
                 <div
                   className={`
                   
-                  w-77.25
+                  w-full
+                  sm:max-w-77.25
+                  md:max-w-167.5
             rounded-2xl
             border
             border-gray-200

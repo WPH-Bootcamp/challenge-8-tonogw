@@ -16,7 +16,7 @@ export default function SolutionSection() {
       >
         <h2
           className="
-          text-xs font-bold 
+          text-[28px] lg:text-[40px] font-bold 
       text-gray-900 dark:text-white md:text-[40px] "
         >
           {solutionHeader.title}
