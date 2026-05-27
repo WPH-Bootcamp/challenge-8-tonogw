@@ -1,4 +1,4 @@
-import { services, ServicesHeader } from "../../data/services";
+import { services, ServicesHeader } from "../../data/proceses";
 
 export default function ServicesSection() {
   return (

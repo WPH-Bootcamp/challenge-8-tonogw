@@ -1,5 +1,4 @@
-import { services } from "../../data/services";
-import { ServicesHeader } from "../../data/services";
+import { processes, ProcessHeader } from "../../data/proceses";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 
@@ -28,7 +27,7 @@ export default function OurProcessSection() {
             text-[28px] md:text-[34px] py-2 lg:text-[40px]
       "
         >
-          {ServicesHeader.title}
+          {ProcessHeader.title}
         </h2>
 
         <p
@@ -40,7 +39,7 @@ export default function OurProcessSection() {
       pb-4
       "
         >
-          {ServicesHeader.description}
+          {ProcessHeader.description}
         </p>
       </div>
 
@@ -53,7 +52,7 @@ export default function OurProcessSection() {
       "
       >
         {/* WITH VALIDATION ODD/EVEN NUMBER */}
-        {services.map((item, index) => {
+        {processes.map((item, index) => {
           const isOdd = index % 2 === 0;
 
           return (
@@ -171,7 +170,7 @@ export default function OurProcessSection() {
             "
               >
                 {/* LINE */}
-                {index !== services.length - 1 && (
+                {index !== processes.length - 1 && (
                   <div
                     className="
                 absolute
@@ -180,7 +179,7 @@ export default function OurProcessSection() {
                 h-29
                 bottom-0
                 w-0.5
-                bg-[#252B37]
+                bg-[#DFDFDF]
                 dark:bg-[#252B37]
                 "
                   />

@@ -71,6 +71,13 @@ export interface ServiceItem {
   image?: string;
 }
 
+export interface ProcessItem {
+  id: number;
+  title: string;
+  description: string;
+  image?: string;
+}
+
 export interface End2EndItem {
   id: number;
   title: string;

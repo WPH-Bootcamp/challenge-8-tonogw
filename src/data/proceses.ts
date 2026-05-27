@@ -1,11 +1,11 @@
-import type { ServiceItem } from "../types";
+import type { ProcessItem } from "../types";
 
-export const ServicesHeader = {
+export const ProcessHeader = {
   title: "Our Process",
   description: "Clear steps. Smart execution. Results you can count on.",
 };
 
-export const services: ServiceItem[] = [
+export const processes: ProcessItem[] = [
   {
     id: 1,
     title: "Discovery & Consultation",
@@ -47,5 +47,5 @@ export const services: ServiceItem[] = [
     description: "Scale, Measure & Improve Continously",
     image: "6",
   },
-  // Add more services...
+  // Add more process...
 ];
