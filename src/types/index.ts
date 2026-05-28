@@ -19,24 +19,49 @@
  * Button variant types
  * Gunakan ini untuk Button component
  */
-export type ButtonVariant = 'primary' | 'secondary' | 'outline';
+export type ButtonVariant = "primary" | "secondary" | "outline";
+
+export type ButtonSize = "sm" | "md" | "lg";
 
 /**
  * Example: Button Props
  * Uncomment dan sesuaikan dengan kebutuhan
  */
-// export interface ButtonProps {
-//   variant?: ButtonVariant;
-//   children: React.ReactNode;
-//   onClick?: () => void;
-//   className?: string;
-//   disabled?: boolean;
-// }
+export interface ButtonProps {
+  variant?: ButtonVariant;
+  children: React.ReactNode;
+  onClick?: () => void;
+  className?: string;
+  disabled?: boolean;
+}
 
+export interface PopupProps {
+  type: boolean;
+}
 // ==========================================
 // Section Data Types
 // ==========================================
 
+export interface BrandLogo {
+  id: number;
+  name: string;
+  image: string;
+}
+
+export interface Project {
+  id: number;
+  name: string;
+  portofolio: string;
+  image: string;
+}
+
+export interface Success {
+  id: string;
+  success: boolean;
+  title: string;
+  description: string;
+  image?: string;
+}
 /**
  * TODO: Define interfaces untuk data yang digunakan di sections
  *
@@ -50,14 +75,47 @@ export type ButtonVariant = 'primary' | 'secondary' | 'outline';
 /**
  * Example: Service/Product Item
  */
-// export interface ServiceItem {
-//   id: number;
-//   title: string;
-//   description: string;
-//   icon?: string;
-//   image?: string;
-// }
+export interface ServiceItem {
+  id: number;
+  name: string;
+  // description: string;
+  // image?: string;
+}
 
+export interface ProcessItem {
+  id: number;
+  title: string;
+  description: string;
+  image?: string;
+}
+
+export interface End2EndItem {
+  id: number;
+  title: string;
+  description: string;
+  icon?: string;
+}
+
+export interface SolutionItem {
+  id: number;
+  title: string;
+  description: string;
+  icon?: string;
+}
+
+export interface IndustryItem {
+  id: number;
+  title: string;
+  description: string;
+  image?: string;
+  slug: string;
+}
+
+export interface Quesionnaire {
+  id: number;
+  question: string;
+  answer: string;
+}
 /**
  * Example: Team Member
  */
@@ -77,15 +135,17 @@ export type ButtonVariant = 'primary' | 'secondary' | 'outline';
 /**
  * Example: Testimonial
  */
-// export interface Testimonial {
-//   id: number;
-//   name: string;
-//   position: string;
-//   company: string;
-//   message: string;
-//   avatar?: string;
-//   rating?: number;
-// }
+export interface Testimonial {
+  id: number;
+  name: string;
+  role: string;
+  company: string;
+  message: string;
+  avatar?: string;
+  rating?: number;
+  image: string;
+  icon: string;
+}
 
 // ==========================================
 // Navigation Types
@@ -94,11 +154,11 @@ export type ButtonVariant = 'primary' | 'secondary' | 'outline';
 /**
  * Navigation menu item
  */
-// export interface NavItem {
-//   label: string;
-//   href: string;
-//   external?: boolean;
-// }
+export interface NavItem {
+  label: string;
+  href: string;
+  external?: boolean;
+}
 
 // ==========================================
 // Form Types (if needed)

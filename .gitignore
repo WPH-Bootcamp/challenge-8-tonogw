@@ -16,20 +16,11 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .idea
+.env
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
-# Claude Code / AI Assistant files
-.claude/
-.claude
-.claude.json
-.clauderc
-claude.json
-.anthropic/
-.cursor/
-.aider*
-.continue/
+Button.example.tsx
