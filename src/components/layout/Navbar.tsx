@@ -177,14 +177,14 @@ const Navbar = ({ navItems = navLink }: NavbarProps) => {
             href="#letstalk"
             onClick={() => setIsMenuOpen(false)}
             className="
-            mt-auto
+            mt-4
             flex
             h-12
             items-center
             justify-center
 
             rounded-full
-            lg-[#FF623E]
+            bg-[#FF623E]
 
             text-white font-semibold
             "
