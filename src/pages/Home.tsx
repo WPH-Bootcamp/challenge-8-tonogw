@@ -14,34 +14,36 @@ import ProjectSection from "../components/sections/ProjectSection";
 import FAQSection from "../components/sections/FAQSection";
 import LetsTalkSection from "../components/sections/LetsTalkSection";
 import Footer from "../components/layout/Footer";
-import Success from "../components/layout/Success";
+// import Success from "../components/layout/Success";
+// import Popup from "../components/layout/Popup";
+// import type { PopupProps } from "../types";
 // export default function Home(){}
 
 const Home = () => {
   return (
-    <Success>
-      <div className="min-h-screen">
-        <Navbar />
+    // <Popup>
+    <div className="min-h-screen">
+      <Navbar />
 
-        <main>
-          <HeroSection />
-          <BrandLogosSection />
-          <End2EndSection />
-          {/* <AboutSection /> */}
-          <OurProcessSection />
-          <SolutionSection />
-          <IndustrySection />
-          <ProjectSection />
-          <TestimonialsSection />
-          <FAQSection />
-          <LetsTalkSection />
-          {/* <ContactSection /> */}
-        </main>
+      <main>
+        <HeroSection />
+        <BrandLogosSection />
+        <End2EndSection />
+        {/* <AboutSection /> */}
+        <OurProcessSection />
+        <SolutionSection />
+        <IndustrySection />
+        <ProjectSection />
+        <TestimonialsSection />
+        <FAQSection />
+        <LetsTalkSection />
+        {/* <ContactSection /> */}
+      </main>
 
-        {/* <Footer /> */}
-        <Footer />
-      </div>
-    </Success>
+      {/* <Footer /> */}
+      <Footer />
+    </div>
+    // </Popup>
   );
 };
 

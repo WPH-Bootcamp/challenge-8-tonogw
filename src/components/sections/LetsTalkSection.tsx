@@ -1,14 +1,28 @@
 import { services } from "../../data/services";
-import { usePopup } from "../layout/Success";
+// import { usePopup } from "../layout/Success";
+import type { Success } from "../../types";
+import { useState } from "react";
+import Popup from "../layout/Popup";
+// import { usePopup } from "../../components/layout/Success"
 
 export default function LetsTalkSection() {
-  const { setSendStatus, setIsSuccess } = usePopup();
+  //   const { setSendStatus, setIsSuccess } = usePopup();
+
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [popup, setPopup] = useState<boolean | null>(null);
 
   const handleSend = () => {
-    // SIMULATE FROM SUBMISSION (TRUE = SUCCESS, FALSE = ERROR)
-    const isFormValid = Math.random() > 0.5; // Change to validate form here
-    setSendStatus(true);
-    setIsSuccess(isFormValid);
+    // SIMULATE FROM SUBMISSION (TRUE = SUCCESS, FALSE = FAILED)
+    const isValid = fullName.trim() && email.trim() && message.trim();
+
+    setPopup(!!isValid);
+
+    setTimeout(() => {
+      setPopup(null);
+    }, 3000);
   };
 
   return (
@@ -16,6 +30,7 @@ export default function LetsTalkSection() {
       id="letstalk"
       className="py-16 lg:py-20 px-4 md:px-20  dark:bg-black dark:text-white"
     >
+      {popup !== null && <Popup type={popup} />}
       {/* HEADER */}
       <div className="text-center">
         <h2
@@ -45,18 +60,24 @@ export default function LetsTalkSection() {
           <h4 className="pt-12 text-sm font-bold">Name</h4>
           <input
             type="text"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
             placeholder="Enter your name"
             className="lg:py-4 text-sm h-12 border border-gray-400 dark:border-[#252B37] rounded-xl"
           />
           <h4 className="pt-5 text-sm font-bold">Email</h4>
           <input
             type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
             className="py-4 h-12 border border-gray-400 dark:border-[#252B37] rounded-xl"
           />
           <h4 className="pt-5 text-sm font-bold">Message</h4>
           <textarea
             name="textarea"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             id="textarea"
             className="py-4 pt-5 min-h-33.5 border border-gray-400 dark:border-[#252B37] rounded-xl"
             placeholder="Enter your message"

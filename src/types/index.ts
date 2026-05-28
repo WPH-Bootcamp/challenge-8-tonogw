@@ -35,6 +35,9 @@ export interface ButtonProps {
   disabled?: boolean;
 }
 
+export interface PopupProps {
+  type: boolean;
+}
 // ==========================================
 // Section Data Types
 // ==========================================
