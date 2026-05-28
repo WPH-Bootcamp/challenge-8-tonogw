@@ -22,7 +22,8 @@ export default function Popup({ type }: PopupProps) {
         className="
       
       
-      w-[353px]
+      w-88.25
+      md:w-129.5
       rounded-3xl
       border border-gray-300
       bg-white
