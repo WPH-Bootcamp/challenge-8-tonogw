@@ -16,7 +16,6 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .idea
-.env
 .DS_Store
 *.suo
 *.ntvs*
@@ -24,3 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 Button.example.tsx
+config.bat
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
