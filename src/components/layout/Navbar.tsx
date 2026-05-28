@@ -3,7 +3,9 @@ import type { NavItem } from "../../types";
 import yourlogo from "../../assets/logo/logo-yourlogo.png";
 import yourlogodark from "../../assets/logo/yourlogodark.png";
 import { useEffect, useState } from "react";
-import LetsTalkSection from "../sections/LetsTalkSection";
+// import LetsTalkSection from "../sections/LetsTalkSection";
+
+import { Menu, X } from "lucide-react";
 
 interface NavbarProps {
   // Define your props here
@@ -11,6 +13,7 @@ interface NavbarProps {
 }
 
 const Navbar = ({ navItems = navLink }: NavbarProps) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   useEffect(() => {
     if (darkMode) {
@@ -22,7 +25,7 @@ const Navbar = ({ navItems = navLink }: NavbarProps) => {
   return (
     <header
       className="
-      
+      relative
      top-0 z-50 h-16 lg:h-21  
     bg-white dark:bg-black
     backdrop-blur-md
@@ -65,11 +68,12 @@ const Navbar = ({ navItems = navLink }: NavbarProps) => {
           ))}
         </nav>
 
-        {/* TOGGLE DARK/LIGHT */}
+        <div className="flex item-center gap-4">
+          {/* TOGGLE DARK/LIGHT */}
 
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="
           flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold
           bg-slate-100 dark:bg-slate-800
           text-slate-700 dark:text-slate-200
@@ -77,29 +81,114 @@ const Navbar = ({ navItems = navLink }: NavbarProps) => {
           border border-slate-200 dark:border-slate-600
           transition-all duration-200 cursor-pointer
         "
-        >
-          {darkMode ? "☀️  Light" : "🌙  Dark"}
-        </button>
+          >
+            {darkMode ? "☀️  Light" : "🌙  Dark"}
+          </button>
 
-        {/* BUTTON */}
-        <a
-          href="#letstalk"
-          className="
+          {/* BUTTON DESKTOP */}
+          <a
+            href="#letstalk"
+            className="
           hidden lg:flex h-11 w-[197px] items-center justify-center
           rounded-full bg-[#FF623E] text-sm font-semibold text-white
         "
-        >
-          Let's Discuss
-        </a>
-        {/* MOBILE MENU */}
-        <button
-          className="
-          text-2xl text-gray-900 dark:text-white lg:hidden
+          >
+            Let's Discuss
+          </a>
+          {/* MOBILE HAMBURGER MENU */}
+          <button
+            onClick={() => setIsMenuOpen(true)}
+            className="
+          lg:hidden 
+          text-2xl text-gray-900 dark:text-white 
         "
-        >
-          ☰
-        </button>
+          >
+            <Menu size={32} />
+          </button>
+        </div>
       </div>
+      {isMenuOpen && (
+        <div
+          className="
+          fixed inset-0
+          z-999
+
+          min-h-screen
+          w-full
+
+          
+          bg-white
+          dark:bg-black
+
+          px-6
+          py-6
+
+          flex flex-col
+          transition-all
+          duration-300
+          "
+        >
+          {/* TOP */}
+          <div className="flex items-center justify-between">
+            <img src={yourlogo} alt="Your Logo" className="hidden dark:flex" />
+            <img
+              src={yourlogodark}
+              alt="Your Logo"
+              className="flex dark:hidden"
+            />
+            <button
+              onClick={() => setIsMenuOpen(false)}
+              className=" text-gray-900 dark:text-white "
+            >
+              <X size={32} />
+            </button>
+          </div>
+
+          {/* NAVIGATION */}
+          <nav className="mt-16 flex flex-col gap-8">
+            {navItems.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={() => setIsMenuOpen(false)}
+                className="
+                  text-2xl
+                  font-bold
+
+                  text-[#0A0D12]
+                  dark:text-white
+
+                  transition-colors
+                  duration-300
+
+                  hover:text-[#FF623E]
+                  "
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+          {/* BUTTON */}
+          <a
+            href="#letstalk"
+            onClick={() => setIsMenuOpen(false)}
+            className="
+            mt-auto
+            flex
+            h-12
+            items-center
+            justify-center
+
+            rounded-full
+            lg-[#FF623E]
+
+            text-white font-semibold
+            "
+          >
+            Let's Discuss
+          </a>
+        </div>
+      )}
     </header>
   );
 };
