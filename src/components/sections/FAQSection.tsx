@@ -11,7 +11,6 @@ export default function FAQSection() {
     <section
       id="faq"
       className="
-
         bg-white
         dark:bg-black
         px-4
@@ -22,14 +21,12 @@ export default function FAQSection() {
       {/* HEADER */}
       <div
         className="
-            grid grid-cols-1 lg:grid-cols-3 gap-4
-            
+            grid grid-cols-1 lg:grid-cols-3 gap-4           
             "
       >
         <div
           className="
-        grid-cols-1 lg:w-82.75 
-        
+        grid-cols-1 lg:w-82.75        
         "
         >
           <h2
@@ -45,8 +42,7 @@ export default function FAQSection() {
         <div
           className="col-span-2
         flex items-end
-        justify-end
-        
+        justify-end        
         "
         >
           <p
@@ -67,8 +63,7 @@ export default function FAQSection() {
         </div>
       </div>
       <div
-        className="
-        
+        className="        
       grid grid-cols-1 lg:grid-cols-3
       gap-8 
       "
@@ -79,8 +74,7 @@ export default function FAQSection() {
           className="
         mt-16
         lg:col-span-2
-        flex flex-col
-      
+        flex flex-col      
         border-t 
         border-[#E4E7EC]
         dark:border-[#252B37]
@@ -94,8 +88,7 @@ export default function FAQSection() {
               dark:border-[#252B37]
               bg-[#FAFAFA]
               dark:bg-black
-              py-7
-              
+              py-7              
               lg:col-span-2
               "
             >
@@ -151,16 +144,11 @@ export default function FAQSection() {
           mt-20
           w-full
           p-6
-        
-          bg-[#CC4E32]
-          
+          bg-[#CC4E32]          
           rounded-2xl
-          lg:rounded-3xl
-        
+          lg:rounded-3xl        
           dark:text-white
-
           lg:self-start
-
           "
         >
           <h3

@@ -27,21 +27,14 @@ export default function IndustrySection() {
       "
       >
         <h2
-          className="
-        
-        
+          className="    
         text-[32px]
-
-
         lg:mt-12.5
-        lg:py-7.5
-        
+        lg:py-7.5      
         lg:text[40px]
-         dark:text-[#FDFDFD]
-
-         font-bold
-         
-         "
+        dark:text-[#FDFDFD]
+        font-bold
+        "
         >
           {IndustryHeader.title}
         </h2>
@@ -55,8 +48,6 @@ export default function IndustrySection() {
         lg:text-lg
 
         dark:text-[#A4A7AE]
-        
-        
         "
         >
           {IndustryHeader.description}
@@ -82,7 +73,6 @@ export default function IndustrySection() {
               onClick={() => setActiveIndustry(item.slug)}
               className={`
                 border-l-4              
-                
                 mt-4
                 gap-4
                 py-8
@@ -92,8 +82,6 @@ export default function IndustrySection() {
                 text-2xl
                 lg:text-[32px]
                 font-bold
-                
-                
                 transition-all
                 duration-300
                 cursor-pointer
@@ -115,8 +103,6 @@ export default function IndustrySection() {
         <div
           className="
                 rounded-3xl
-              
-                
                 p-5
               "
         >

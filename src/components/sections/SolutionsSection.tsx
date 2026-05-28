@@ -14,6 +14,7 @@ export default function SolutionSection() {
       text-center 
       "
       >
+        {/* TITLE */}
         <h2
           className="
           text-[28px] lg:text-[40px] font-bold 
@@ -22,6 +23,7 @@ export default function SolutionSection() {
           {solutionHeader.title}
         </h2>
 
+        {/* SUBTITLE */}
         <p
           className="
         text-sm md:text-lg 
@@ -35,43 +37,41 @@ export default function SolutionSection() {
       {/* GRID WRAPPER */}
       <div
         className="
-      mx-auto mt-16 grid max-w-360
-      grid-cols-1 gap-10
-      
-
-      md:grid-cols-2
-      lg:grid-cols-3
-      "
+        mx-auto mt-16 grid max-w-360
+        grid-cols-1 gap-10
+        md:grid-cols-2
+        lg:grid-cols-3
+        "
       >
-        {/*  */}
+        {/* FETCH DATA */}
         {solutions.map((sols) => (
           <div
             key={sols.id}
             className="
             relative
-             
-                    "
+            "
           >
             <div
               className="
-            text-left 
-             bg-[#FAFAFA] dark:text-white
-             dark:bg-[#0A0D12]
-             rounded-2xl
-             p-px
-             border 
-             border-[#DEDCDC] 
-             dark:border-[#181D27]
-             
-             
-             hover:bg-linear-to-r
-             hover:from-[#FF6C37]
-             hover:to-[#DEDCDC]
+              text-left 
+              bg-[#FAFAFA] dark:text-white
+              dark:bg-[#0A0D12]
+              rounded-2xl
+              p-px
+              border 
+              border-[#DEDCDC] 
+              dark:border-[#181D27]
+              
+              
+              hover:bg-linear-to-r
+              hover:from-[#FF6C37]
+              hover:to-[#DEDCDC]
                 transition-all
                 duration-300
               cursor-pointer
-             "
+              "
             >
+              {/* WRAPPER */}
               <div
                 className="
                 relative
@@ -81,10 +81,10 @@ export default function SolutionSection() {
                 dark:bg-[#0A0D12]
 
                 dark:text-white
-                 w-full
-                 
+                w-full
                 "
               >
+                {/* ICON SOLUTION */}
                 <img
                   src={sols.icon}
                   alt={sols.title}
@@ -94,19 +94,21 @@ export default function SolutionSection() {
                 pl-5
               "
                 />
+
+                {/* SOLUTION TITLE */}
                 <h3
                   className="
-                pt-16
-              p-8
-              font-bold
-              text-nowrap
-              text-xl
-             
-              
-              "
+                    pt-16
+                  p-8
+                  font-bold
+                  text-nowrap
+                  text-xl
+                  "
                 >
                   {sols.title}
                 </h3>
+
+                {/* SOLUTION DESCRIPTION */}
                 <p
                   className="
                 
@@ -115,7 +117,6 @@ export default function SolutionSection() {
               text-[#717680]
               font-medium
               dark:text-white
-             
               "
                 >
                   {sols.description}

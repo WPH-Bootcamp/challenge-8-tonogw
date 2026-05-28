@@ -14,8 +14,8 @@ export default function ProjectSection() {
       <div
         className="
       text-center
-     text-gray-900
-     dark:text-white
+      text-gray-900
+      dark:text-white
       "
       >
         <h2
@@ -42,15 +42,13 @@ export default function ProjectSection() {
 
       <div
         className="
-        text-lg
-         grid
-         md:grid-cols-2
-         
-      lg:grid-cols-3
-      gap-4
-       mx-4
-        lg:mx-35
-       
+          text-lg
+          grid
+          md:grid-cols-2
+          lg:grid-cols-3
+          gap-4
+          mx-4
+          lg:mx-35
         "
       >
         {projects.map((item) => (
@@ -60,9 +58,9 @@ export default function ProjectSection() {
               alt=""
               className="
               w-90.25
-             lg:w-93.25
-             mt-4
-             "
+              lg:w-93.25
+              mt-4
+              "
             />
             <h3
               className="

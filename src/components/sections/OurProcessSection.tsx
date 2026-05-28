@@ -24,20 +24,20 @@ export default function OurProcessSection() {
         <h2
           className="
           font-bold
-            text-[28px] md:text-[34px] py-2 lg:text-[40px]
-      "
+          text-[28px] md:text-[34px] py-2 lg:text-[40px]
+          "
         >
           {ProcessHeader.title}
         </h2>
 
         <p
           className="
-        text-sm md:text-base lg:text-lg
-      text-gray-900
-      dark:text-[#A4A7AE]
-      py-2
-      pb-4
-      "
+            text-sm md:text-base lg:text-lg
+          text-gray-900
+          dark:text-[#A4A7AE]
+          py-2
+          pb-4
+          "
         >
           {ProcessHeader.description}
         </p>
@@ -67,7 +67,7 @@ export default function OurProcessSection() {
             
             items-center
             lg:grid-cols-[1fr_60px_1fr]
-         "
+            "
             >
               {/* DESKTOP LEFT CARD */}
               <div

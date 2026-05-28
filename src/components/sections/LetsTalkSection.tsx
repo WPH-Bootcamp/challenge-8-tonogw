@@ -1,13 +1,9 @@
 import { services } from "../../data/services";
-// import { usePopup } from "../layout/Success";
-import type { Success } from "../../types";
+
 import { useState } from "react";
 import Popup from "../layout/Popup";
-// import { usePopup } from "../../components/layout/Success"
 
 export default function LetsTalkSection() {
-  //   const { setSendStatus, setIsSuccess } = usePopup();
-
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -15,7 +11,7 @@ export default function LetsTalkSection() {
   const [popup, setPopup] = useState<boolean | null>(null);
 
   const handleSend = () => {
-    // SIMULATE FROM SUBMISSION (TRUE = SUCCESS, FALSE = FAILED)
+    // SIMULATE FORM SUBMISSION (TRUE = SUCCESS, FALSE = FAILED)
     const isValid = fullName.trim() && email.trim() && message.trim();
 
     setPopup(!!isValid);
@@ -71,7 +67,7 @@ export default function LetsTalkSection() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
-            className="py-4 h-12 border border-gray-400 dark:border-[#252B37] rounded-xl"
+            className="py-4 text-sm h-12 border border-gray-400 dark:border-[#252B37] rounded-xl"
           />
           <h4 className="pt-5 text-sm font-bold">Message</h4>
           <textarea
@@ -79,7 +75,7 @@ export default function LetsTalkSection() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             id="textarea"
-            className="py-4 pt-5 min-h-33.5 border border-gray-400 dark:border-[#252B37] rounded-xl"
+            className="py-4 pt-5 text-sm min-h-33.5 border border-gray-400 dark:border-[#252B37] rounded-xl"
             placeholder="Enter your message"
           ></textarea>
         </div>

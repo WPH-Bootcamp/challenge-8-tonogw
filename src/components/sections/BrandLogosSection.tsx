@@ -6,7 +6,7 @@ export default function BrandLogosSection() {
       id="about"
       className="
       bg-white
-       dark:bg-black
+      dark:bg-black
         
         "
     >
@@ -15,10 +15,10 @@ export default function BrandLogosSection() {
         <div className="mb-14 text-center">
           <h2
             className="
-          text-[16px]
+            text-[16px]
             lg:text-lg font-semibold text-gray-900
-           dark:text-white
-           "
+            dark:text-white
+          "
           >
             Trusted by Global Innovators & Leading Brands
           </h2>
@@ -37,10 +37,10 @@ export default function BrandLogosSection() {
           h-full 
           w-24 
           bg-linear-to-r
-           from-white
+          from-white
             dark:from-black
-             to-transparent
-             "
+            to-transparent
+            "
           />
           {/* FADE RIGHT */}
           <div
@@ -53,8 +53,8 @@ export default function BrandLogosSection() {
           h-full
           w-24
           bg-linear-to-l
-         from-white
-           dark:from-black
+          from-white
+          dark:from-black
           to-transparent
           "
           />
@@ -83,9 +83,7 @@ export default function BrandLogosSection() {
                   h-10
                   w-auto
                   shrink-0
-
-                  object-contain 
-                  
+                  object-contain                   
                   saturate-0   
                   hover:brightness-120 
                   hover:saturate-100 

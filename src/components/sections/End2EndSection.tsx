@@ -8,7 +8,7 @@ export default function End2EndSection() {
       px-4
       w-full
         bg-white
-         dark:bg-black
+        dark:bg-black
           dark:text-white 
           py-24
           "
@@ -18,29 +18,28 @@ export default function End2EndSection() {
         className="
       font-quicksand 
       text-center
-       bg-white
+      bg-white
         dark:bg-black"
       >
         <h2
           className="
           text-[28px]
         md:text-4xl
-         font-bold
+        font-bold
           text-gray-900
-           dark:text-white
+          dark:text-white
         "
         >
           {end2endHeader.title}
         </h2>
-
         <p
           className="
           
         mt-4 
         text-[14px]
-         md:text-lg
+        md:text-lg
           text-gray-800
-           dark:text-gray-400
+          dark:text-gray-400
         "
         >
           {end2endHeader.description}
@@ -50,14 +49,11 @@ export default function End2EndSection() {
       <div
         className="
       mt-20
-
       flex
       flex-wrap
       justify-center
-
       gap-4
-      md:gap-6
-         
+      md:gap-6        
       "
       >
         {end2endItems.map((e2e) => (
@@ -67,28 +63,20 @@ export default function End2EndSection() {
             flex flex-col
             items-center
             justify-center
-
             aspect-square
             w-43
             h-43
-
             md:w-52
             md:h-52
-
             lg:w-68.75
             lg:h-68.75
-
             rounded-full
             border
-
           border-[#DEDCDC]
           dark:border-[#181D27]
-
           bg-[#FAFAFA]
           dark:bg-[#0A0D12]
-
             text-center
-
             p-6
             "
           >
@@ -101,7 +89,6 @@ export default function End2EndSection() {
             >
               {e2e.icon}
             </p>
-
             {/* TITLE */}
             <p
               className="

@@ -17,7 +17,7 @@ export const questionnaires: Quesionnaire[] = [
     id: 2,
     question: "How do i know if this is right for my business?",
     answer:
-      "Book a free consult - we'll assess your goals and recommend the riht approach.",
+      "Book a free consult - we'll assess your goals and recommend the right approach.",
   },
 
   {
