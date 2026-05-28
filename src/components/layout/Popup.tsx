@@ -25,7 +25,8 @@ export default function Popup({ type }: PopupProps) {
       w-[353px]
       rounded-3xl
       border border-gray-300
-      bg-white-8
+      bg-white
+      
       p-8
         text-center
 
