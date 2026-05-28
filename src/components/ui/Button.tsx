@@ -14,19 +14,6 @@ interface ButtonProps {
   type?: "button" | "submit" | "reset";
 }
 
-// const Button = ({
-//   variant = "primary",
-//   size = "md",
-//   children,
-//   onClick,
-//   className = "",
-//   disabled = false,
-//   type = "button",
-// }: ButtonProps) => {
-//   // common base style
-//   const baseStyles =
-//     "font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2";
-
 export default function Button({
   variant = "primary",
   children,
@@ -56,26 +43,6 @@ export default function Button({
       hover:text-white
     `,
   };
-
-  // Size styles
-  // const sizeStyles = {
-  //   sm: "px-4 py-2 text-sm",
-  //   md: "px-6 py-3 text-base",
-  //   lg: "px-8 py-4 text-lg",
-  // };
-
-  // // Disabled styles
-  // const disabledStyles = "opacity-50 cursor-not-allowed";
-
-  // // Combined all styles
-  // const buttonClasses = `
-  //   ${baseStyles}
-  //   ${variantStyles[variant]}
-  //   ${sizeStyles[size]}
-  //   ${disabled ? disabledStyles : ""}
-  //   ${className}
-
-  //   `.trim();
 
   return (
     <button
