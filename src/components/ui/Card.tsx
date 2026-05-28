@@ -17,4 +17,4 @@ const Card = ({
   return <div className="/* Tailwind classes */">{/* Component JSX */}</div>;
 };
 
-export default [Card];
+export default Card;

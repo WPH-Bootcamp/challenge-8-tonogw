@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "../components/layout/Navbar";
 // import Footer from "../components/layout/Footer";
 import HeroSection from "../components/sections/HeroSection";
@@ -12,30 +13,35 @@ import IndustrySection from "../components/sections/IndustrySection";
 import ProjectSection from "../components/sections/ProjectSection";
 import FAQSection from "../components/sections/FAQSection";
 import LetsTalkSection from "../components/sections/LetsTalkSection";
+import Footer from "../components/layout/Footer";
+import Success from "../components/layout/Success";
 // export default function Home(){}
 
 const Home = () => {
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <Success>
+      <div className="min-h-screen">
+        <Navbar />
 
-      <main>
-        <HeroSection />
-        <BrandLogosSection />
-        <End2EndSection />
-        {/* <AboutSection /> */}
-        <OurProcessSection />
-        <SolutionSection />
-        <IndustrySection />
-        <ProjectSection />
-        <TestimonialsSection />
-        <FAQSection />
-        <LetsTalkSection />
-        {/* <ContactSection /> */}
-      </main>
+        <main>
+          <HeroSection />
+          <BrandLogosSection />
+          <End2EndSection />
+          {/* <AboutSection /> */}
+          <OurProcessSection />
+          <SolutionSection />
+          <IndustrySection />
+          <ProjectSection />
+          <TestimonialsSection />
+          <FAQSection />
+          <LetsTalkSection />
+          {/* <ContactSection /> */}
+        </main>
 
-      {/* <Footer /> */}
-    </div>
+        {/* <Footer /> */}
+        <Footer />
+      </div>
+    </Success>
   );
 };
 

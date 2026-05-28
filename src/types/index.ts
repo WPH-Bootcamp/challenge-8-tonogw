@@ -51,6 +51,14 @@ export interface Project {
   portofolio: string;
   image: string;
 }
+
+export interface Success {
+  id: string;
+  success: boolean;
+  title: string;
+  description: string;
+  image?: string;
+}
 /**
  * TODO: Define interfaces untuk data yang digunakan di sections
  *

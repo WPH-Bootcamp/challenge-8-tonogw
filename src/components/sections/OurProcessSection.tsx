@@ -66,8 +66,6 @@ export default function OurProcessSection() {
             grid-cols-[60px_1fr]
             
             items-center
-            
-
             lg:grid-cols-[1fr_60px_1fr]
          "
             >

@@ -1,6 +1,16 @@
 import { services } from "../../data/services";
+import { usePopup } from "../layout/Success";
 
 export default function LetsTalkSection() {
+  const { setSendStatus, setIsSuccess } = usePopup();
+
+  const handleSend = () => {
+    // SIMULATE FROM SUBMISSION (TRUE = SUCCESS, FALSE = ERROR)
+    const isFormValid = Math.random() > 0.5; // Change to validate form here
+    setSendStatus(true);
+    setIsSuccess(isFormValid);
+  };
+
   return (
     <section
       id="letstalk"
@@ -8,8 +18,26 @@ export default function LetsTalkSection() {
     >
       {/* HEADER */}
       <div className="text-center">
-        <h2>Ready to Start? Let's Talk.</h2>
-        <p>Tell us what you need, and we'll get back to you soon.</p>
+        <h2
+          className="
+        text-[28px]
+        lg:text-[40px]
+        text-[#0A0D12]
+        dark:text-[#FDFDFD]
+        font-bold
+
+        "
+        >
+          Ready to Start? Let's Talk.
+        </h2>
+        <p
+          className="
+          text-[#717680]
+        dark:text-[#A4A7AE]
+        "
+        >
+          Tell us what you need, and we'll get back to you soon.
+        </p>
       </div>
 
       <div className="mx-auto w-full max-w-161">
@@ -18,19 +46,19 @@ export default function LetsTalkSection() {
           <input
             type="text"
             placeholder="Enter your name"
-            className="lg:py-4 text-sm h-12 border border-gray-400 rounded-xl"
+            className="lg:py-4 text-sm h-12 border border-gray-400 dark:border-[#252B37] rounded-xl"
           />
           <h4 className="pt-5 text-sm font-bold">Email</h4>
           <input
             type="email"
             placeholder="Enter your email"
-            className="py-4 h-12 border border-gray-400 rounded-xl"
+            className="py-4 h-12 border border-gray-400 dark:border-[#252B37] rounded-xl"
           />
           <h4 className="pt-5 text-sm font-bold">Message</h4>
           <textarea
-            name=""
-            id=""
-            className="py-4 pt-5 min-h-33.5 border border-gray-400 rounded-xl"
+            name="textarea"
+            id="textarea"
+            className="py-4 pt-5 min-h-33.5 border border-gray-400 dark:border-[#252B37] rounded-xl"
             placeholder="Enter your message"
           ></textarea>
         </div>
@@ -49,22 +77,27 @@ export default function LetsTalkSection() {
                   <label
                     key={item.id}
                     className="
-                flex
-                items-center
-                gap-3
-                "
+                    flex
+                    items-center
+                    gap-3
+                    "
                   >
                     <input
                       type="checkbox"
                       className="
-                      h-4 w-4
-                       bg-white
+                        h-4 w-4
+                        appearance-none
+                        
+                        dark:checked:bg-[#FF623E]
+                        checked:bg-[#FF623E]
                         dark:bg-[#1a1a1a]
-                         accent-[#FF623E] 
-                         border border-gray-300
-                          dark:border-[#252B37]
-                           focus:ring-0
-                            focus:outline-none"
+                        accent-[#FF623E] 
+                        border border-gray-300
+                        dark:border-[#252B37]
+                        focus:ring-0
+                        focus:outline-none
+                        cursor-pointer
+                        "
                     />
                     <span>{item.name}</span>
                   </label>
@@ -74,13 +107,14 @@ export default function LetsTalkSection() {
             {/* EMPTY COLUMN */}
             <div></div>
             <button
+              onClick={handleSend}
               className="
-              col-span-3
-             mt-10 
-            h-12 rounded-full
-             bg-[#FF632E]
-              text-white 
-              font-bold"
+                col-span-3
+                mt-10 
+                h-12 rounded-full
+                bg-[#FF632E]
+                text-white 
+                font-bold"
             >
               SEND
             </button>

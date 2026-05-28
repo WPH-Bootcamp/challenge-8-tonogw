@@ -20,7 +20,8 @@ export default function HeroSection() {
         className="
         relative
 
-        min-h-screen
+        md:h-125
+        lg:h-186.75
 
         flex
         flex-col
@@ -89,7 +90,7 @@ export default function HeroSection() {
 
           h-11
           lg:h-14
-            lg:w-45
+          lg:w-45
 
           items-center
           justify-center
@@ -143,7 +144,7 @@ export default function HeroSection() {
           block dark:hidden
           w-full
           object-contain
-          lg:w-186.75
+          lg:max-w-186.75
           "
           src={heroImageLight}
           alt="Hero Image"

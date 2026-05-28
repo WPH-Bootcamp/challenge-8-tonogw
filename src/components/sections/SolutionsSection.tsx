@@ -69,7 +69,7 @@ export default function SolutionSection() {
              hover:to-[#DEDCDC]
                 transition-all
                 duration-300
-            
+              cursor-pointer
              "
             >
               <div

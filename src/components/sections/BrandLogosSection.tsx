@@ -46,30 +46,30 @@ export default function BrandLogosSection() {
           <div
             className="
           pointer-events-none
-           absolute
-            right-0
-             top-0
-              z-10
-               h-full
-                w-24
-                 bg-linear-to-l
-                  from-white
-                   dark:from-black
-                    to-transparent
-                    "
+          absolute
+          right-0
+          top-0
+          z-10
+          h-full
+          w-24
+          bg-linear-to-l
+         from-white
+           dark:from-black
+          to-transparent
+          "
           />
           {/* LOGO CAROUSEL */}
           <div
             className="
           flex
-           items-center
-            gap-16 
-            overflow-x-auto
-             scroll-smooth
-              whitespace-nowrap 
-              scrollbar-hide
-              py-4
-              "
+          items-center
+          gap-16 
+          overflow-x-auto
+          scroll-smooth
+          whitespace-nowrap 
+          scrollbar-hide
+          py-4
+          "
           >
             {brandLogos.map((logo) => (
               <img

@@ -75,7 +75,7 @@ const Navbar = ({ navItems = navLink }: NavbarProps) => {
           text-slate-700 dark:text-slate-200
           hover:bg-slate-200 dark:hover:bg-slate-700
           border border-slate-200 dark:border-slate-600
-          transition-all duration-200
+          transition-all duration-200 cursor-pointer
         "
         >
           {darkMode ? "☀️  Light" : "🌙  Dark"}
@@ -105,17 +105,3 @@ const Navbar = ({ navItems = navLink }: NavbarProps) => {
 };
 
 export default Navbar;
-
-// export default function NavbarSection({ navLink }: NavItem[]) {
-//   return (
-//     <header className="min:h-44 md:h-64 lg:h-84 bg-white dark:bg-gray-900 dark:text-white">
-//       <div className="">
-//         <div className="text-left">
-//           <img src="../" alt="" />
-//         </div>
-//         <div className="text-center"></div>
-//         <div className="text-"></div>
-//       </div>
-//     </header>
-//   );
-// }

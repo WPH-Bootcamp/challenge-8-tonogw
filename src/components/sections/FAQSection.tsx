@@ -43,7 +43,7 @@ export default function FAQSection() {
           </h2>
         </div>
         <div
-          className="col-span-2 mb-6
+          className="col-span-2
         flex items-end
         justify-end
         
@@ -57,8 +57,9 @@ export default function FAQSection() {
           text-sm
           lg:text-lg
           text-[#717680]
+
          
-          dark:text-white
+          dark:text-[#A4A7AE]
           "
           >
             {FAQHeader.subtitle}
@@ -89,23 +90,22 @@ export default function FAQSection() {
             <div
               key={item.id}
               className="
-             
-             border-b border-[#E4E7EC]
-             dark:border-[#252B37]
-             bg-[#FAFAFA]
-             dark:bg-black
-             py-7
-             
-             lg:col-span-2
-             "
+              border-b border-[#E4E7EC]
+              dark:border-[#252B37]
+              bg-[#FAFAFA]
+              dark:bg-black
+              py-7
+              
+              lg:col-span-2
+              "
             >
-              {/* QUESTION */}
+              {/* QUESTIONS */}
               <button
                 onClick={() => setOpenId(openId === item.id ? null : item.id)}
                 className="
-            flex w-full
-            justify-between
-            "
+                flex w-full
+                justify-between
+                "
               >
                 <h3
                   className="
@@ -121,6 +121,7 @@ export default function FAQSection() {
                 shrink-0
                 text-gray-900
                 dark:text-white
+                cursor-pointer
                 "
                 >
                   {openId === item.id ? (
@@ -147,37 +148,37 @@ export default function FAQSection() {
         </div>
         <div
           className="
-         
-          p-6
-          
           mt-20
+          w-full
+          p-6
+        
           bg-[#CC4E32]
           
           rounded-2xl
           lg:rounded-3xl
-         
+        
           dark:text-white
 
           lg:self-start
 
-        "
+          "
         >
           <h3
             className="
-          text-[28px]
-          lg:text-[36px]
-          text-white
-          font-bold
-          "
+              text-[28px]
+              lg:text-[36px]
+              text-white
+              font-bold
+              "
           >
             Let's talk it through
           </h3>
           <p
             className="
-            mt-1
-          text-lg
-          text-white
-          "
+                mt-1
+              text-lg
+              text-white
+              "
           >
             book a free consultation with our team
           </p>
@@ -185,22 +186,26 @@ export default function FAQSection() {
             src={imgConsult}
             alt="Consultation"
             className="
-          mt-6
-          "
+              mt-6
+              "
           />
-          <button
+          <a
+            href="#letstalk"
             className="
+            block
             w-full
             rounded-full
-            mt-6
-          bg-[#FFFFFF]
-          font-bold
-          p-2
-          text-black
-          "
+            mt-8
+            bg-[#FFFFFF]
+            font-bold
+            p-2
+            text-black
+            cursor-pointer
+            text-center
+            "
           >
             Free Consultation
-          </button>
+          </a>
         </div>
       </div>
     </section>

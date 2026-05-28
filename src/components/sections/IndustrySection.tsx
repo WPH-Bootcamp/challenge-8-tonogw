@@ -7,13 +7,6 @@ export default function IndustrySection() {
   const selectedIndustry = industryItems.find(
     (item) => item.slug === activeIndustry,
   );
-  // useEffect(()=>{
-  //     if (istryPage === "fintech") {
-  //         document.documentElement.classList.add("fintech");
-  //         document.documentElement.classList.remove("ecommerce");
-  //         document.documentElement.classList.remove("healthcare");
-  //     }
-  // });
 
   return (
     <section
@@ -103,6 +96,7 @@ export default function IndustrySection() {
                 
                 transition-all
                 duration-300
+                cursor-pointer
 
                 ${
                   activeIndustry === item.slug
